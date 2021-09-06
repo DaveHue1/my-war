@@ -4,10 +4,14 @@
 ##############
 
 #Adds scoreboard objectives
-scoreboard objectives add mywar.trig.ss trigger
-trigger enable @a mywar.trig.ss
 
-#Warning for spawning home base structure
-tag @a[sort=random,limit=1,tag=!mywwar.generate.done] add mywar.warning
-tellraw @a[tag=mywar.warning,tag=!mywar.generate.done] [{"text":"Warning: Home base will replace existing blocks","color":"red"}]
-tellraw @a[tag=mywar.warning,tag=!mywar.generate.done] [{"text":"[Click Here to Generate Home Base]","color":"green","clickEvent":{"action":"run_command","value":"/trigger set @s mywar.trigger.ss 1"}}]
+##Objectives for detecting if structure has been given 
+scoreboard objectives add mywar.if_gen
+scoreboard players add #mywar.if_gen mywar.if_gen 0
+
+#Message for spawning home base structure
+execute if score #mywar.if_gen mywar.if_gen matches 0 run tag @a[sort=random,limit=1] add mywar.warning
+execute if score #mywar.if_gen mywar.if_gen matches 0 run tellraw @a[tag=mywar.warning] [{"text":"Place down the home base structure to begin","color":"green"}]
+execute if score #mywar.if_gen mywar.if_gen matches 0 run tellraw @a[tag=mywar.warning] [{"text":"Warning: Home base will replace existing blocks","color":"red"}]
+execute if score #mywar.if_gen mywar.if_gen matches 0 run give @a[tag=mywar.warning] armor_stand{display:{Name:'{"text":"Home Base","color":"green","italic":false}'},CustomModelData:2,EntityTag:{NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:0b,Invisible:1b,Tags:["mywar.generate"]}} 1
+execute if score #mywar.if_gen mywar.if_gen matches 0 run scoreboard players set #mywar.if_gen mywar.if_gen 1
