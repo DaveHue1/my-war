@@ -1,5 +1,5 @@
 {
 	"values": [
-		"mywar:tick"
+		"mywar:tick/main_tick"
 	]
 }
