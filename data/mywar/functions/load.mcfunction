@@ -13,4 +13,4 @@ execute if score #mywar.if_gen mywar.if_gen matches 0 run tag @a[sort=random,lim
 execute if score #mywar.if_gen mywar.if_gen matches 0 run tellraw @a[tag=mywar.warning] [{"text":"Place down the Home Base structure to start","color":"green"}]
 execute if score #mywar.if_gen mywar.if_gen matches 0 run tellraw @a[tag=mywar.warning] [{"text":"Warning: Home base will replace existing blocks, place in clear area.","color":"red"}]
 execute if score #mywar.if_gen mywar.if_gen matches 0 run execute as @a[tag=mywar.warning] run function mywar:item/give/home_base
-execute if score #mywar.if_gen mywar.if_gen matches 0 run scoreboard players set #mywar.if_gen mywar.if_gen 1
+execute if score #mywar.if_gen mywar.if_gen matches 0 run execute as @a[tag=mywar.warning] run scoreboard players set #mywar.if_gen mywar.if_gen 1
