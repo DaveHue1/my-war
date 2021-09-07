@@ -8,3 +8,4 @@
 execute as @e[tag=mywar.entity] at @s run function mywar:tick/entity_tick
 
 #Ticking for players
+execute as @a at @s run function mywar:tick/master_tick
