@@ -1,5 +1,5 @@
 #########
-Description: Spreads units around player 
+#Description: Spreads units around player 
 #Author: Dave Hue
 #########
 
