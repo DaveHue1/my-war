@@ -7,7 +7,7 @@
 ##Command objectives
 scoreboard objectives add mywar.spreadlvl dummy
 
-##Objectives for detecting if a structure has been given 
+##Objectives for detecting if the structure has been given 
 scoreboard objectives add mywar.if_gen dummy
 scoreboard players add mywar.if_gen mywar.if_gen 0
 
