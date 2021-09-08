@@ -5,7 +5,11 @@
 
 #Adds scoreboard objectives
 ##Command objectives
+#Spread radius
 scoreboard objectives add mywar.spreadlvl dummy
+
+#Right clicking
+scoreboard objectives add mywar.command minecraft.used:minecraft.carrot_on_a_stick
 
 ##Objectives for detecting if the structure has been given 
 scoreboard objectives add mywar.if_gen dummy
