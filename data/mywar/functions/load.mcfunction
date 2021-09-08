@@ -12,6 +12,7 @@ scoreboard objectives add mywar.spreadlvl dummy
 scoreboard objectives add mywar.command minecraft.used:minecraft.carrot_on_a_stick
 
 ##Objectives for detecting if the structure has been given 
+#Home base test
 scoreboard objectives add mywar.if_gen dummy
 scoreboard players add mywar.if_gen mywar.if_gen 0
 
