@@ -17,3 +17,7 @@ execute if predicate mywar:commands/collect run function mywar:commands/collect/
 
 #Tax soldiers
 execute if predicate mywar:commands/tax run function mywar:commands/tax/tax
+
+#Resets COAS score
+scoreboard players set @s mywar.command 0
+
