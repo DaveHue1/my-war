@@ -1,3 +1,10 @@
+########
+#Starts the iteration of X 
+#Author(s): DaveHue, CreeperMagnet
+#Code used with permission
+########
+
+
 execute if entity @s[scores={mywar.dummy=0}] run function mywar:commands/home_base/home_base_z_start
 execute store success score mywar.hb mywar.dummy run scoreboard players remove @s[scores={mywar.dummy=1}] mywar.dummy 1
 execute if score mywar.hb mywar.dummy matches 1 positioned ~1 ~ ~ run function mywar:commands/home_base/home_base_y
