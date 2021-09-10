@@ -15,5 +15,6 @@ clear @a[tag=mywar.warning,sort=nearest,limit=1] minecraft:armor_stand{Name:'{"t
 
 #Sets the home base coords to teleport back to 
 function mywar:technical/home_base
+
 #Kills entity
 kill @s
