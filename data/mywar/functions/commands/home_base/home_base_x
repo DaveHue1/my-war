@@ -55,3 +55,4 @@ execute store success score mywar.hb mywar.dummy run scoreboard players remove @
 execute if score mywar.hb mywar.dummy matches 1 positioned ~8388608 ~ ~ run function mywar:commands/home_base/home_base_x
 execute store success score mywar.hb mywar.dummy run scoreboard players remove @s[scores={mywar.dummy=16777216..}] mywar.dummy 16777216
 execute if score mywar.hb mywar.dummy matches 1 positioned ~16777216 ~ ~ run function mywar:commands/home_base/home_base_x
+
