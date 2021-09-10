@@ -4,6 +4,10 @@
 ##############
 
 #Adds scoreboard objectives
+
+#Global scoreboard objective 
+scoreboard objectives add mywar.dummy dummy 
+
 ##Command objectives
 #Spread radius
 scoreboard objectives add mywar.spreadlvl dummy
