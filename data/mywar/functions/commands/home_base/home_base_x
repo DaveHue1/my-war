@@ -4,7 +4,7 @@
 #Code used with permission
 ########
 
-execute if entity @s[scores={mywar.dummy=0}] run function mywar:commands/home_base/home_base_y_start
+execute if entity @s[scores={mywar.dummy=0}] run function mywar:commands/home_base/home_base_y_init
 execute store success score mywar.hb mywar.dummy run scoreboard players remove @s[scores={mywar.dummy=1}] mywar.dummy 1
 execute if score mywar.hb mywar.dummy matches 1 positioned ~1 ~ ~ run function mywar:commands/home_base/home_base_x
 execute store success score mywar.hb mywar.dummy run scoreboard players remove @s[scores={mywar.dummy=2..3}] mywar.dummy 2
