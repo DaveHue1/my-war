@@ -4,7 +4,7 @@
 ##############
 
 #Gives the player command items
-function mywar:items/give/commands_items
+function mywar:item/give/commands_items
 
 #Creates home base structure
 setblock ~ ~ ~10 structure_block{mode:"LOAD",name:"mywar:castle",ignoreEntities:0b}
