@@ -19,7 +19,7 @@ scoreboard objectives add mywar.command minecraft.used:minecraft.carrot_on_a_sti
 ##Objectives for detecting if the structure has been given 
 #Home base test
 scoreboard objectives add mywar.if_gen dummy
-scoreboard players add mywar.if_gen mywar.if_gen 0
+scoreboard players add #mywar.if_gen mywar.if_gen 0
 
 #Message for spawning home base structure
 execute if score #mywar.if_gen mywar.if_gen matches 0 run tag @a[sort=random,limit=1] add mywar.warning
