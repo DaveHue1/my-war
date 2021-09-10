@@ -6,4 +6,4 @@
 ########
 
 execute store result score @s mywar.dummy run scoreboard players get #mywar.homebase_z mywar.dummy 
-function mywar:home/commands/home_base/home_base_z
+function mywar:commands/home_base/home_base_z
