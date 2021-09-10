@@ -10,7 +10,7 @@ execute if predicate mywar:commands/spread run function mywar:commands/spread/sp
 execute if predicate mywar:commands/aggro run function mywar:commands/aggro/aggro
 
 #Teleports player back to home base
-execute if predicate mywar:commands/home_base run function mywar:commands/home_base/home_base
+execute if predicate mywar:commands/home_base run function mywar:commands/home_base/home_base_x_init
 
 #Collects soldiers 
 execute if predicate mywar:commands/collect run function mywar:commands/collect/collect
