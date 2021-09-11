@@ -5,4 +5,4 @@
 ########
 
 execute store result score @s mywar.dummy run scoreboard players get #mywar.homebase_x mywar.dummy 
-function mywar:commands/home_base/home_base_x
+execute positioned 0 0 0 run function mywar:commands/home_base/home_base_x
