@@ -3,7 +3,7 @@
 #Author: Dave Hue
 #########
 
-scoreboard players operation @s mywar.spreadlvl2 = @s mywar.spreadlvl
+scoreboard players operation #mywar.spread mywar.spreadlvl = @s mywar.spreadlvl
 tp @e[tag=mywar.soldier,sort=nearest,distance=..100] @s
 
 execute as @s[scores={mywar.spreadlvl=64..127}] at @s run execute as @e[tag=mywar.soldier,sort=nearest,distance=..100] at @s run spreadplayers ~ ~ 0 64 false @s
@@ -30,4 +30,4 @@ execute as @s[scores={mywar.spreadlvl=1}] at @s run scoreboard players remove @s
 tellraw @s {"text":"Spreading soldiers!","color":"yellow"}
 playsound minecraft:block.note_block.pling master @s ~ ~ ~
 
-scoreboard players operation @s mywar.spreadlvl = @s mywar.spreadlvl2
+scoreboard players operation @s mywar.spreadlvl = #mywar.spreadlvl mywar.spreadlvl
