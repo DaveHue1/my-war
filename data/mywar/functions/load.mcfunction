@@ -11,7 +11,6 @@ scoreboard objectives add mywar.dummy dummy
 ##Command objectives
 #Spread radius
 scoreboard objectives add mywar.spreadlvl dummy
-scoreboard objectives add mywar.spreadlvl2 dummy
 
 #Right clicking
 scoreboard objectives add mywar.command minecraft.used:minecraft.carrot_on_a_stick
