@@ -30,4 +30,4 @@ execute as @s[scores={mywar.spreadlvl=1}] at @s run scoreboard players remove @s
 tellraw @s {"text":"Spreading soldiers!","color":"yellow"}
 playsound minecraft:block.note_block.pling master @s ~ ~ ~
 
-scoreboard players operation @s mywar.spreadlvl = #mywar.spreadlvl mywar.spreadlvl
+scoreboard players operation @s mywar.spreadlvl = #mywar.spread mywar.spreadlvl
