@@ -4,9 +4,9 @@
 ########
 
 #Sets spread level
-execute unless predicate mywar:sneak run function mywar:commands/spread/spread_level
+execute unless predicate mywar:player/sneaking run function mywar:commands/spread/spread_level
 
 #Spreads units 
-execute if predicate mywar:sneak run function mywar:commands/spread/spread_soldiers
+execute if predicate mywar:player/sneaking run function mywar:commands/spread/spread_soldiers
 
 
