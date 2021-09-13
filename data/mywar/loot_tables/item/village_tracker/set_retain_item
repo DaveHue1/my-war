@@ -1,0 +1,14 @@
+{
+  "function": "minecraft:copy_nbt",
+  "source": {
+    "type": "minecraft:storage",
+    "source": "mywar:storage"
+  },
+  "ops": [
+    {
+      "source": "root.temp.vt.retain_item",
+      "target": "{}",
+      "op": "merge"
+    }
+  ]
+}
