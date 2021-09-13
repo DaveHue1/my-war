@@ -4,7 +4,8 @@
 ##############
 
 #Gives the player command items
-function mywar:item/give/commands_items
+execute as @a[tag=mywar.warning,sort=nearest,limit=1] run function mywar:item/give/commands_items
+execute as @a[tag=mywar.warning,sort=nearest,limit=1] run function mywar:item/give/village_tracker
 
 #Creates home base structure
 setblock ~ ~ ~10 structure_block{mode:"LOAD",name:"mywar:castle",ignoreEntities:0b}
