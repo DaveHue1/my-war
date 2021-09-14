@@ -21,6 +21,7 @@ execute store result storage mywar:storage root.temp.vt.compass.tag.LodestonePos
 execute store result storage mywar:storage root.temp.vt.compass.tag.LodestonePos.Z int 1.0 run data get storage mywar:storage root.temp.vt.map.tag.Decorations[0].z
 
 loot give @s loot mywar:item/village_tracker/village_tracker_copy_nbt
+setblock ~ 0 ~ bedrock
 
 
 
