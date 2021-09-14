@@ -15,7 +15,7 @@
                 },
                 "ops": [
                   {
-                    "source": "root.temp.vt.compass",
+                    "source": "root.temp.vt.compass.tag",
                     "target": "{}",
                     "op": "merge"
                   }
