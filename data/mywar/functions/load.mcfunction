@@ -15,6 +15,12 @@ scoreboard objectives add mywar.spreadlvl dummy
 #Right clicking
 scoreboard objectives add mywar.command minecraft.used:minecraft.carrot_on_a_stick
 
+##Add item objectives 
+#Village tracker coordinates
+scoreboard objectives add mywar.vt.x dummy
+scoreboard objectives add mywar.vt.y dummy
+scoreboard objectives add mywar.vt.z dummy
+
 ##Detecting if the structure has been given 
 scoreboard players add #mywar.if_gen mywar.dummy 0
 
