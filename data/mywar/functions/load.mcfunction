@@ -3,13 +3,24 @@
 #Author: DaveHue
 ##############
 
-#Adds teams
+##Sets default scores
+#Conquest level
+execute unless score #mywar.conquest_level mywar.dummy matches 0.. run scoreboard players set #mywar.conquest_level mywar.dummy 0
+
+#Spawn count
+execute unless score #mywar.spawn_count mywar.dummy matches 0.. run scoreboard players set #mywar.spawn_count mywar.dummy 0
+
+##Adds teams
+
+#Teams
 team add mywar.friendly
 team add mywar.enemy
 
+#Modifying team characteristics 
 team modify mywar.friendly color green
 team modify mywar.enemy color red
 
+#Join teams
 team join mywar.friendly @a
 
 #Adds scoreboard objectives
