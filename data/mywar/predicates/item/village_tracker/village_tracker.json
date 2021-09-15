@@ -3,6 +3,6 @@
   "entity": "this",
   "predicate": {
     "type": "minecraft:player",
-    "nbt": "{SelectedItem:{mywar.village_tracker}}"
+    "nbt": "{SelectedItem:{mywar.village_tracker:1b}}"
   }
 }
