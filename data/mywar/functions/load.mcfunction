@@ -7,6 +7,11 @@
 team add mywar.friendly
 team add mywar.enemy
 
+team modify mywar.friendly color green
+team modify mywar.enemy color red
+
+team join mywar.friendly @a
+
 #Adds scoreboard objectives
 
 #Global scoreboard objective 
