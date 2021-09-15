@@ -33,7 +33,7 @@ execute if score #mywar.spawn_limit2 mywar.dummy matches 1 run function mywar:en
 execute store success score #mywar.spawn_limit2 mywar.dummy run scoreboard players remove @s[scores={mywar.dummy=4096..8191}] mywar.dummy 4096
 execute if score #mywar.spawn_limit2 mywar.dummy matches 1 run function mywar:entity/village/soldier_spawn/spawn_zombie
 execute store success score #mywar.spawn_limit2 mywar.dummy run scoreboard players remove @s[scores={mywar.dummy=8192..16383}] mywar.dummy 8192
-execute if score #mywar.spawn_limit2 mywar.dummy matches 1 run function mywar:commands/home_base/iterate_x
+execute if score #mywar.spawn_limit2 mywar.dummy matches 1 run function mywar:entity/village/soldier_spawn/spawn_zombie
 execute store success score #mywar.spawn_limit2 mywar.dummy run scoreboard players remove @s[scores={mywar.dummy=16384..32767}] mywar.dummy 16384
 execute if score #mywar.spawn_limit2 mywar.dummy matches 1 run function mywar:entity/village/soldier_spawn/spawn_zombie
 execute store success score #mywar.spawn_limit2 mywar.dummy run scoreboard players remove @s[scores={mywar.dummy=32768..65535}] mywar.dummy 32768
