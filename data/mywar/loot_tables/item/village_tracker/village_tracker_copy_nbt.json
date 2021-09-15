@@ -20,7 +20,64 @@
                     "op": "merge"
                   }
                 ]
-              }
+              },
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  {
+					"text": "Current Village",
+					"color": "green",
+					"italic": false
+				  },
+				  {
+					"text": "X: ",
+					"color": "yellow",
+					"italic": false,
+					"extra": [
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "mywar.vt.x",
+						  "value": "*"
+						},
+						"color": "yellow",
+						"italic": false
+					  }
+					]
+				  },
+				  {
+					"text": "Y: ",
+					"color": "yellow",
+					"italic": false,
+					"extra": [
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "mywar.vt.y",
+						  "value": "*"
+						}
+					  }
+					]
+				  },
+				  {
+					"text": "Z: ",
+					"color": "yellow",
+					"italic": false,
+					"extra": [
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "mywar.vt.z",
+						  "value": "*"
+						},
+						"italic": false
+					  }
+					]
+				  }
+				],
+				"replace": true
+			  }
             ]
           }
         ]
