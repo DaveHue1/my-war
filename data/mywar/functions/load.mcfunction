@@ -11,7 +11,7 @@ execute unless score #mywar.conquest_level mywar.dummy matches 0.. run scoreboar
 execute unless score #mywar.spawn_count mywar.dummy matches 0.. run scoreboard players set #mywar.spawn_count mywar.dummy 0
 
 #Spawn limit
-execute unless score #mywar.spawn_limit mywar.dummy matches 0.. run scoreboard players set #mywar.spawn_limit mywar.dummy 0
+execute unless score #mywar.spawn_limit mywar.dummy matches 0.. run scoreboard players set #mywar.spawn_limit mywar.dummy 50
 
 ##Adds teams
 
