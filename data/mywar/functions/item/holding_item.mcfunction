@@ -1,5 +1,5 @@
 #########
-#Executes holding items
+#Detects what items the player is holding 
 #Author: DaveHue
 #########
 
