@@ -3,6 +3,10 @@
 #Author: DaveHue
 ##############
 
+#Adds teams
+team add mywar.friendly
+team add mywar.enemy
+
 #Adds scoreboard objectives
 
 #Global scoreboard objective 
