@@ -7,7 +7,7 @@
 summon marker ~ ~ ~ {Tags:["mywar.entity","mywar.village_marker"],PersistenceRequired:1b}
 
 #Starts the cycle for summoning soldiers 
-function mywar:entity/village/soldier_spawn/spawn_zombie
+function mywar:entity/village/soldier_spawn/spawn_start
 
 #Adds soldiers and villagers to team 
 team join mywar.enemy @e[type=villager,distance=..200] 
