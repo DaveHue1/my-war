@@ -4,7 +4,7 @@
 #####
 
 #Enemies remaining bossbar
-execute store result score #mywar.enemies_remaining mywar.dummy run scoreboard players get #mywar.spawn_count mywar.dummy
+execute store result score #mywar.enemies_remaining mywar.dummy run scoreboard players get #mywar.spawn_limit mywar.dummy
 execute store result bossbar mywar:enemies_remaining value run scoreboard players get #mywar.enemies_remaining mywar.dummy
 bossbar set mywar:enemies_remaining players @a 
 
