@@ -3,6 +3,10 @@
 #Author: DaveHue
 ##############
 
+##Set up clocks
+#1 second clock
+function mywar:clocks/one_second_timer
+
 ##Sets default scores
 #Conquest level
 execute unless score #mywar.conquest_level mywar.dummy matches 0.. run scoreboard players set #mywar.conquest_level mywar.dummy 10
