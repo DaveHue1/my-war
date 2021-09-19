@@ -9,5 +9,9 @@ team join mywar.friendly @e[team=mywar.enemy,distance=..200]
 #Adds captured tag
 tag @s add mywar.village_captured
 
-#Adds to the village count
-scoreboard players add #mywar.village_count mywar.dummy 1
+#Add scores
+scoreboard players add #mywar.conquest_level mywar.dummy 1
+execute store result bossbar mywar:conquest_level max run scoreboard players get #mywar.conquest_level mywar.dummy
+bossbar set mywar:conquest_level players @a 
+bossbar set mywar:enemies_remaining visible false
+
