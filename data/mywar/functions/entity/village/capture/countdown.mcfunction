@@ -19,3 +19,8 @@ execute if score @s mywar.capture matches 0 run tellraw @a[distance=..200] {"tex
 #Capture sequence 
 execute if score @s mywar.capture matches 0 run function mywar:entity/village/capture/claim
 
+#Bossbar 
+scoreboard players add #mywar.conquest_level mywar.dummy 1
+execute store result bossbar mywar:conquest_level max run scoreboard players get #mywar.conquest_level mywar.dummy
+
+
