@@ -3,7 +3,7 @@
 #Author: DaveHue
 ########
 
-summon zombie ~ ~ ~ {PersistenceRequired:1b,Tags:["mywar.soldier","mywwar.foot_soldier"],ArmorItems:[{},{},{},{id:"minecraft:iron_helmet",Count:1b,tag:{Unbreakable:1b}}],Attributes:[{Name:generic.follow_range,Base:500},{Name:generic.movement_speed,Base:0.25},{Name:generic.attack_damage,Base:2},{Name:generic.attack_knockback,Base:1}]}
+summon zombie ~ ~ ~ {PersistenceRequired:1b,Tags:["mywar.soldier","mywar.foot_soldier"],ArmorItems:[{},{},{},{id:"minecraft:iron_helmet",Count:1b,tag:{Unbreakable:1b}}],Attributes:[{Name:generic.follow_range,Base:500},{Name:generic.movement_speed,Base:0.25},{Name:generic.attack_damage,Base:2},{Name:generic.attack_knockback,Base:1}]}
 
 scoreboard players remove #mywar.spawn_limit2 mywar.dummy 1
 
