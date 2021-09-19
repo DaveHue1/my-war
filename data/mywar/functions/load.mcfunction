@@ -5,13 +5,18 @@
 
 ##Sets default scores
 #Conquest level
-execute unless score #mywar.conquest_level mywar.dummy matches 0.. run scoreboard players set #mywar.conquest_level mywar.dummy 0
+scoreboard players set #mywar.conquest_level mywar.dummy 10
 
 #Spawn count
 execute unless score #mywar.spawn_count mywar.dummy matches 0.. run scoreboard players set #mywar.spawn_count mywar.dummy 0
 
 #Spawn limit
 scoreboard players set #mywar.spawn_limit mywar.dummy 50
+
+##Bossbars
+bossbar add mywar:conquest_level {"text":"Conquest Level","color":"yellow"}
+execute store result bossbar mywar:conquest_level max run scoreboard players get #mywar.conquest_level mywar.dummy
+bossbar set mywar:conquest_level players @a 
 
 ##Adds teams
 
