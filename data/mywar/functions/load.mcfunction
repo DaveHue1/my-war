@@ -48,7 +48,7 @@ execute unless score #mywar.spawn_count mywar.dummy matches 0.. run scoreboard p
 execute unless score #mywar.spawn_limit mywar.dummy matches 0.. run scoreboard players set #mywar.spawn_limit mywar.dummy 50
 
 ##Bossbars
-bossbar add mywar:conquest_level {"text":"Conquest Level","color":"yellow"}
+bossbar add mywar:conquest_level [{"text":"Conquest Level: ","color":"yellow"},{"score":{"name":"#mywar.conquest_level","objective":"mywar.dummy"}}]
 execute store result bossbar mywar:conquest_level max run scoreboard players get #mywar.conquest_level mywar.dummy
 bossbar set mywar:conquest_level players @a 
 
