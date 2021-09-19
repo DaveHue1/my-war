@@ -6,7 +6,7 @@
 #Gives the player items
 execute as @a[tag=mywar.warning,sort=nearest,limit=1] run function mywar:item/give/commands_items
 execute as @a[tag=mywar.warning,sort=nearest,limit=1] run function mywar:item/give/village_tracker
-give @a[limit=1,sort=nearest,tag=mywar.warning] ink_sac{display:{Name:'{"text":"Money","color":"yellow","bold":true,"italic":false}'},CustomModelData:1,mywar.currency,mywar.item} 64
+give @a[limit=1,sort=nearest,tag=mywar.warning] ink_sac{display:{Name:'{"text":"Money","color":"yellow","bold":true,"italic":false}'},CustomModelData:1,mywar.currency:1b,mywar.item:1b} 64
 
 #Creates home base structure
 setblock ~ ~ ~10 structure_block{mode:"LOAD",name:"mywar:castle",ignoreEntities:0b}
