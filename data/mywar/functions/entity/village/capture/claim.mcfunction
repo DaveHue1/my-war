@@ -11,7 +11,7 @@ tag @s add mywar.village_captured
 
 #Add scores
 scoreboard players add #mywar.conquest_level mywar.dummy 1
-execute store result bossbar mywar:conquest_level value run scoreboard players get #mywar.conquest_level mywar.dummy
+execute store result bossbar mywar:conquest_level value run scoreboard players get #mywar.current_conquest_level mywar.dummy
 bossbar set mywar:conquest_level players @a 
 bossbar set mywar:enemies_remaining visible false
 
