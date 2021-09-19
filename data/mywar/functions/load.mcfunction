@@ -40,6 +40,9 @@ execute if score #mywar.if_gen mywar.dummy matches 0 run execute as @a[tag=mywar
 #1 second clock
 function mywar:clocks/one_second_clock
 
+#Ten second clock
+function mywar:clocks/ten_second_clock
+
 ##Sets default scores
 #Conquest level
 execute unless score #mywar.conquest_level mywar.dummy matches 0.. run scoreboard players set #mywar.conquest_level mywar.dummy 10
