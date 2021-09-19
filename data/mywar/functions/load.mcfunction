@@ -53,10 +53,19 @@ execute unless score #mywar.spawn_count mywar.dummy matches 0.. run scoreboard p
 #Spawn limit
 execute unless score #mywar.spawn_limit mywar.dummy matches 0.. run scoreboard players set #mywar.spawn_limit mywar.dummy 50
 
+#Enemies remaining 
+execute unless score #mywar.enemies_remaining mywar.dummy matches 0.. run scoreboard players set #mywar.enemies_remaining mywar.dummy 0
+
 ##Bossbars
+#Conquest level
 bossbar add mywar:conquest_level [{"text":"Conquest Level: ","color":"yellow"},{"score":{"name":"#mywar.conquest_level","objective":"mywar.dummy"}}]
 execute store result bossbar mywar:conquest_level max run scoreboard players get #mywar.conquest_level mywar.dummy
 bossbar set mywar:conquest_level players @a 
+
+#Enemies remaining
+bossbar add mywar:enemies_remaining [{"text":"Enemies Remaining: ","color":red"},{"score":{"name":"#mywar.enemies_remaining","objective":"mywar.dummy"}}]
+execute store result bossbar mywar:conquest_level max run scoreboard players get #mywar.conquest_level mywar.dummy
+ 
 
 ##Adds teams
 
