@@ -5,7 +5,7 @@
 
 ##Set up clocks
 #1 second clock
-function mywar:clocks/one_second_timer
+function mywar:clocks/one_second_clock
 
 ##Sets default scores
 #Conquest level
