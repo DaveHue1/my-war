@@ -4,6 +4,9 @@
 ##############
 
 ##Adds scoreboard objectives
+#Collect objectives
+scoreboard objectives add mywar.c_fs dummy 
+
 #Capture objective
 scoreboard objectives add mywar.capture dummy
 
