@@ -65,7 +65,6 @@ bossbar set mywar:conquest_level players @a
 #Enemies remaining
 bossbar add mywar:enemies_remaining [{"text":"Enemies Remaining: ","color":red"},{"score":{"name":"#mywar.enemies_remaining","objective":"mywar.dummy"}}]
 execute store result bossbar mywar:conquest_level max run scoreboard players get #mywar.conquest_level mywar.dummy
- 
 
 ##Adds teams
 
