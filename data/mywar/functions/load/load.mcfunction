@@ -19,12 +19,8 @@ execute if score #mywar.if_gen mywar.dummy matches 0 run tellraw @a[tag=mywar.wa
 execute if score #mywar.if_gen mywar.dummy matches 0 run execute as @a[tag=mywar.warning] run function mywar:item/give/home_base
 execute if score #mywar.if_gen mywar.dummy matches 0 run execute as @a[tag=mywar.warning] run scoreboard players set #mywar.if_gen mywar.dummy 1
 
-##Set up clocks
-#1 second clock
-function mywar:clocks/one_second_clock
-
-#Ten second clock
-function mywar:clocks/ten_second_clock
+#Clocks
+function mywar:load/clocks
 
 #Bossbars
 function mywar:load/bossbars
