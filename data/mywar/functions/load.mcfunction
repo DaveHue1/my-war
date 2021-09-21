@@ -3,6 +3,9 @@
 #Author: DaveHue
 ##############
 
+#Data
+function mywar:load/data
+
 ##Adds scoreboard objectives
 #Collect objectives
 scoreboard objectives add mywar.c_fs_i dummy
@@ -71,17 +74,7 @@ execute store result bossbar mywar:enemies_remaining max run scoreboard players 
 bossbar set mywar:enemies_remaining players @a 
 bossbar set mywar:enemies_remaining visible false
 
-##Adds teams
-
 #Teams
-team add mywar.friendly
-team add mywar.enemy
-
-#Modifying team characteristics 
-team modify mywar.friendly color green
-team modify mywar.enemy color red
-
-#Join teams
-team join mywar.friendly @a
+function mywar:load/teams
 
 
