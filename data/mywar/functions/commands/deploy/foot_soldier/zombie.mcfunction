@@ -5,7 +5,7 @@
 
 #Summons and modifies
 summon vindicator ~ ~ ~ 
-data modify entity @e[type=minecraft:zombie,sort=nearest,limit=1] {} merge from storage mywar:storage perm.soldier.foot_soldier.illager
+data modify entity @e[type=minecraft:zombie,sort=nearest,limit=1] {} merge from storage mywar:storage perm.soldier.foot_soldier.zombie
 
 #Iteration
 scoreboard players remove @s mywar.c_fs_z 1
