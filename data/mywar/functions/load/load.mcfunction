@@ -26,20 +26,6 @@ function mywar:clocks/one_second_clock
 #Ten second clock
 function mywar:clocks/ten_second_clock
 
-##Sets default scores
-#Conquest level
-execute unless score #mywar.conquest_level mywar.dummy matches 0.. run scoreboard players set #mywar.conquest_level mywar.dummy 10
-execute unless score #mywar.current_conquest_level mywar.dummy matches 0.. run scoreboard players set #mywar.conquest_level mywar.dummy 0
-
-#Spawn count
-execute unless score #mywar.spawn_count mywar.dummy matches 0.. run scoreboard players set #mywar.spawn_count mywar.dummy 0
-
-#Spawn limit
-execute unless score #mywar.spawn_limit mywar.dummy matches 0.. run scoreboard players set #mywar.spawn_limit mywar.dummy 50
-
-#Enemies remaining 
-execute unless score #mywar.enemies_remaining mywar.dummy matches 0.. run scoreboard players set #mywar.enemies_remaining mywar.dummy 0
-
 #Bossbars
 function mywar:load/bossbars
 
