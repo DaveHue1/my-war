@@ -4,5 +4,5 @@
 ######
 
 #Deployment 
-execute if score @s mywar.c_fs_i matches 0.. run function mywar:commands/deploy/foot_soldier/illager 
-execute if score @s mywar.c_fs_z matches 0.. run function mywar:commands/deploy/foot_soldier/zombie 
+execute if score @s mywar.c_fs_i matches 1.. run function mywar:commands/deploy/foot_soldier/illager 
+execute if score @s mywar.c_fs_z matches 1.. run function mywar:commands/deploy/foot_soldier/zombie 
