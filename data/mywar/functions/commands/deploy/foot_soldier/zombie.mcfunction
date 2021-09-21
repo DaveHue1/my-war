@@ -4,7 +4,7 @@
 #####
 
 #Summons and modifies
-summon vindicator ~ ~ ~ 
+summon zombie ~ ~ ~ 
 data modify entity @e[type=minecraft:zombie,sort=nearest,limit=1] {} merge from storage mywar:storage perm.soldier.foot_soldier.zombie
 
 #Iteration
