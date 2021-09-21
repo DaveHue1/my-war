@@ -3,6 +3,9 @@
 #Author: Dave Hue
 ########
 
+#Deploys units
+execute if predicate mywar:commands/deploy run function mywar:commands/deploy/deploy
+
 #Spreads units
 execute if predicate mywar:commands/spread run function mywar:commands/spread/spread
 
