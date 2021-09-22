@@ -39,6 +39,12 @@
         "custom_model_data": 6
       },
       "model": "minecraft:item/taxing"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7
+      },
+      "model": "minecraft:item/deploy"
     }
   ]
 }

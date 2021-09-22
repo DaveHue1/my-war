@@ -8,6 +8,6 @@ give @a[tag=mywar.warning] carrot_on_a_stick{display:{Name:'{"text":"Aggro Soldi
 give @a[tag=mywar.warning] carrot_on_a_stick{display:{Name:'{"text":"Teleport Home","color":"aqua","italic":false}'},mywar.home_base:1b,mywar.command:1b,CustomModelData:4} 1
 give @a[tag=mywar.warning] carrot_on_a_stick{display:{Name:'{"text":"Detonate Bomb","color":"aqua","italic":false}'},mywar.detonate:1b,mywar.command:1b,CustomModelData:3} 1
 give @a[tag=mywar.warning] carrot_on_a_stick{display:{Name:'{"text":"Collect Soldiers","color":"aqua","italic":false}'},mywar.collect:1b,mywar.command:1b,CustomModelData:2} 1
-give @a[tag=mywar.warning] carrot_on_a_stick{display:{Name:'{"text":"Deploy Soldiers","color":"aqua","italic":false}'},mywar.deploy:1b,mywar.command:1b,CustomModelData:6} 1
+give @a[tag=mywar.warning] carrot_on_a_stick{display:{Name:'{"text":"Deploy Soldiers","color":"aqua","italic":false}'},mywar.deploy:1b,mywar.command:1b,CustomModelData:7} 1
 give @a[tag=mywar.warning] carrot_on_a_stick{display:{Name:'{"text":"Tax Villages","color":"aqua","italic":false}'},mywar.tax:1b,mywar.command:1b,CustomModelData:6} 1
 
