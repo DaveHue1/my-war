@@ -11,7 +11,7 @@ execute store result bossbar mywar:conquest_level value run scoreboard players g
 bossbar set mywar:conquest_level players @a 
 
 #Enemies remaining
-bossbar add mywar:enemies_remaining [{"text":"Enemies Remaining: ","color":"red"},{"score":{"name":"#mywar.enemies_remaining","objective":"mywar.dummy"}}]
+bossbar add mywar:enemies_remaining [{"text":"Enemies Remaining: ","color":"red"},{"score":{"name":"@e[tag=mywar.village,sort=nearest,limit=1]","objective":"mywar.er"}}]
 execute store result bossbar mywar:enemies_remaining max run scoreboard players get #mywar.spawn_limit mywar.dummy
 bossbar set mywar:enemies_remaining players @a 
 bossbar set mywar:enemies_remaining visible false
