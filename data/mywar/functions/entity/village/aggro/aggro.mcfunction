@@ -14,7 +14,8 @@ execute as @e[tag=mywar.aggro_enemy,type=!#minecraft:undead] at @s run summon ar
 effect give @e[tag=mywar.aggro_enemy] minecraft:resistance 1 255
 
 #Getting teams
-execute as @e[tag=mywar.aggro_enemy_cloud] at @s run data modify entity @s Owner set from entity @e[team=mywar.friendly,sort=random,limit=1] UUID 
+execute as @e[tag=mywar.aggro_enemy_cloud] at @s run data modify entity @s Owner set from entity @e[type=!player,type=!villager,team=mywar.friendly,sort=random,limit=1] UUID 
+execute as @e[tag=mywar.aggro_enemy_cloud] at @s if entity @a[distance=..10] run data modify entity @s Owner set from entity @a[team=mywar.friendly,sort=random,limit=1] UUID 
 
 #Removing tags
 tag @e[tag=mywar.aggro_enemy] remove mywar.aggro_enemy
