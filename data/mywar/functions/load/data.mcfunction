@@ -14,3 +14,4 @@ data merge storage mywar:storage {root:{perm:{soldier:{foot_soldier:{zombie:{fri
 #Foot soldier zombie enemy 
 data merge storage mywar:storage {root:{perm:{soldier:{foot_soldier:{zombie:{enemy:{DeathLootTable:"mywar:item/deplete",Team:"mywar.enemy",PersistenceRequired:1b,Tags:["mywar.soldier","mywar.foot_soldier","mywar.modified"],ArmorItems:[{},{},{},{id:"minecraft:iron_helmet",Count:1b,tag:{Unbreakable:1b}}],Attributes:[{Name:generic.follow_range,Base:500},{Name:generic.movement_speed,Base:0.25},{Name:generic.attack_damage,Base:2},{Name:generic.attack_knockback,Base:1}]}}}}}}}
 
+#cool kids
