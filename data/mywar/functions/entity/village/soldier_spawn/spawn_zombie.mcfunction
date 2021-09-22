@@ -4,7 +4,7 @@
 ########
 
 summon zombie ~ ~ ~ 
-data modify entity @e[type=zombie,tag=!mywar.modified,sort=nearest,limit=1] {} merge from storage mywar:storage root.perm.soldier.foot_soldier.zombie  
+data modify entity @e[type=zombie,tag=!mywar.modified,sort=nearest,limit=1] {} merge from storage mywar:storage root.perm.soldier.foot_soldier.zombie.enemy  
 
 scoreboard players remove #mywar.spawn_limit2 mywar.dummy 1
 
