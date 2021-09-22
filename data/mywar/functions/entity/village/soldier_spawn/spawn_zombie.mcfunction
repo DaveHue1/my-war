@@ -3,7 +3,8 @@
 #Author: DaveHue
 ########
 
-summon zombie ~ ~ ~ {PersistenceRequired:1b,Tags:["mywar.soldier","mywar.foot_soldier"],ArmorItems:[{},{},{},{id:"minecraft:iron_helmet",Count:1b,tag:{Unbreakable:1b}}],Attributes:[{Name:generic.follow_range,Base:500},{Name:generic.movement_speed,Base:0.25},{Name:generic.attack_damage,Base:2},{Name:generic.attack_knockback,Base:1}]}
+summon zombie ~ ~ ~ 
+data modify entity @e[type=zombie,tag=!mywar.modified,sort=nearest,limit=1] {} merge from storage mywar:storage root.perm.soldier.foot_soldier.zombie  
 
 scoreboard players remove #mywar.spawn_limit2 mywar.dummy 1
 
