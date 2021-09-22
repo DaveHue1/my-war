@@ -4,6 +4,9 @@
 ######
 
 ##Adds scoreboard objectives
+#Tax limit
+scoreboard objectives add mywar.tax_limit dummy
+
 #Collect objectives
 scoreboard objectives add mywar.c_fs_i dummy
 scoreboard objectives add mywar.c_fs_z dummy 
