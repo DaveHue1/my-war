@@ -8,6 +8,9 @@
 scoreboard objectives add mywar.c_fs_i dummy
 scoreboard objectives add mywar.c_fs_z dummy 
 
+#Deplete objective
+scoreboard objectives add mywar.er dummy
+
 #Capture objective
 scoreboard objectives add mywar.capture dummy
 
