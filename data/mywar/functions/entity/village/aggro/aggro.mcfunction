@@ -8,7 +8,7 @@ tag @e[team=mywar.enemy,tag=mywar.soldier,sort=random,limit=50] add mywar.aggro_
 
 #Clouds
 execute as @e[tag=mywar.aggro_enemy,type=#mywar:undead] at @s run summon area_effect_cloud ~ ~ ~ {Tags:["mywar.aggro_enemy_cloud"],Particle:"crit",Radius:1f,Duration:20,Effects:[{Id:6b,Amplifier:1b,Duration:0}]}
-execute as @e[tag=mywar.aggro_enemy,type=!#mywar:undead] at @s run summon area_effect_cloud ~ ~ ~ {Tags:["mywar.aggro_enemy_cloud"],Particle:"crit",Radius:1f,Duration:20,Effects:[{Id:6b,Amplifier:1b,Duration:0}]}
+execute as @e[tag=mywar.aggro_enemy,type=!#mywar:undead] at @s run summon area_effect_cloud ~ ~ ~ {Tags:["mywar.aggro_enemy_cloud"],Particle:"crit",Radius:1f,Duration:20,Effects:[{Id:7b,Amplifier:1b,Duration:0}]}
 
 #Resistance
 effect give @e[tag=mywar.aggro_enemy] minecraft:resistance 1 255
