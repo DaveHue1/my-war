@@ -5,7 +5,7 @@
 
 #Summons and modifies
 summon zombie ~ ~ ~ 
-data modify entity @e[type=minecraft:zombie,sort=nearest,limit=1,tag=!mywar.modified] {} merge from storage mywar:storage root.perm.soldier.foot_soldier.zombie
+data modify entity @e[type=minecraft:zombie,sort=nearest,limit=1,tag=!mywar.modified] {} merge from storage mywar:storage root.perm.soldier.foot_soldier.zombie.friendly
 
 #Iteration
 scoreboard players remove @s mywar.c_fs_z 1
