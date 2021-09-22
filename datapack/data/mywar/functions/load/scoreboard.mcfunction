@@ -47,6 +47,10 @@ execute unless score #mywar.spawn_limit mywar.dummy matches 0.. run scoreboard p
 #Replenish limit
 execute unless score #mywar.replenish_limit mywar.dummy matches 0.. run scoreboard players set #mywar.replenish_limit mywar.dummy 10
 
+#Tax limit
+execute as @a unless score @s mywar.tax_limit matches 0.. run scoreboard players set @s mywar.tax_limit 0
+
 #Enemies remaining 
 execute unless score #mywar.enemies_remaining mywar.dummy matches 0.. run scoreboard players set #mywar.enemies_remaining mywar.dummy 0
+
 
