@@ -1,7 +1,7 @@
 ##########
 #Main tick function
 #Author: DaveHue
-#Main tick function, subdivides into ticking for players and entities 
+#Main tick function, subdivides into ticking for players, main entities and deplete item 
 ##########
 
 #Ticking for entities
