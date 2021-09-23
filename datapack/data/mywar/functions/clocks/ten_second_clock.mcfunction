@@ -4,7 +4,8 @@
 #####
 
 #Aggros mobs if player is near 
-execute as @e[type=marker,tag=mywar.village,tag=mywar.village_done,tag=!mywar.village_captured,limit=1] at @s run function mywar:entity/village/aggro/aggro
+execute as @e[type=marker,tag=mywar.village,tag=mywar.village_done,tag=!mywar.village_captured,limit=1] at @s run function mywar:entity/village/aggro/aggro_enemy
+execute as @e[type=marker,tag=mywar.village,tag=mywar.village_done,tag=!mywar.village_captured,limit=1] at @s run function mywar:entity/village/aggro/aggro_friendly
 
 #Replenish mobs
 scoreboard players add #mywar.replenish mywar.dummy 1
