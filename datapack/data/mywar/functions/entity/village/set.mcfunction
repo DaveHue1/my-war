@@ -10,7 +10,7 @@ bossbar set mywar:enemies_remaining name [{"text":"Enemies Remaining: ","color":
 bossbar set mywar:enemies_remaining visible true
 
 #Sound
-playsound minecraft:mywar.war.music master @a[distance=..200] ~ ~ ~
+playsound minecraft:mywar.war.music master @a[distance=..500] ~ ~ ~
 
 #Tag
 tag @s add mywar.village_set
