@@ -11,4 +11,4 @@ scoreboard players remove #mywar.tax mywar.dummy 1
 
 #Taxes
 execute if score #mywar.tax mywar.dummy matches 0 run scoreboard players set @s mywar.tax_limit 30 
-execute if score #mywar.tax mywar.dummy matches 1.. run function mywar:commands/tax/iter
+execute if score #mywar.tax mywar.dummy matches 1.. run function mywar:item/commands/tax/iter

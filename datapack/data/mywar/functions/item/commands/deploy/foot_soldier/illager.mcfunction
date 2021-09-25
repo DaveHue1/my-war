@@ -9,4 +9,4 @@ data modify entity @e[type=minecraft:vindicator,sort=nearest,limit=1,tag=!mywar.
 
 #Iteration
 scoreboard players remove @s mywar.c_fs_i 1
-execute if score @s mywar.c_fs_i matches 1.. run function mywar:commands/deploy/foot_soldier/illager 
+execute if score @s mywar.c_fs_i matches 1.. run function mywar:item/commands/deploy/foot_soldier/illager 

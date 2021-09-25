@@ -9,4 +9,4 @@ data modify entity @e[type=minecraft:zombie,sort=nearest,limit=1,tag=!mywar.modi
 
 #Iteration
 scoreboard players remove @s mywar.c_fs_z 1
-execute if score @s mywar.c_fs_z matches 1.. run function mywar:commands/deploy/foot_soldier/zombie 
+execute if score @s mywar.c_fs_z matches 1.. run function mywar:item/commands/deploy/foot_soldier/zombie 
