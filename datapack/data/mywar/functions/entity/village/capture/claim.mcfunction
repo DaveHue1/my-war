@@ -14,9 +14,12 @@ give @a ink_sac{display:{Name:'{"text":"Money","color":"yellow","bold":true,"ita
 function mywar:entity/village/capture/waypoint
 
 #Adds scores
+execute if score #mywar.current_conquest_level mywar.dummy matches 5 run scoreboard players add #mywar.spawn_count mywar.dummy 1 
+
 scoreboard players add #mywar.current_conquest_level mywar.dummy 1
 scoreboard players add #mywar.spawn_limit mywar.dummy 5
 execute store result bossbar mywar:conquest_level value run scoreboard players get #mywar.current_conquest_level mywar.dummy
+
 
 #Bossbars
 bossbar set mywar:conquest_level name [{"text":"Conquest Level: ","color":"yellow"},{"score":{"name":"#mywar.current_conquest_level","objective":"mywar.dummy"}}]

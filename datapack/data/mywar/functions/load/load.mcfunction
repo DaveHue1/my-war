@@ -6,6 +6,9 @@
 #Data
 function mywar:load/data
 
+#Bossbars
+function mywar:load/bossbars
+
 #Scoreboard
 function mywar:load/scoreboard
 
@@ -14,9 +17,6 @@ function mywar:load/setup
 
 #Clocks
 function mywar:load/clocks
-
-#Bossbars
-function mywar:load/bossbars
 
 #Teams
 function mywar:load/team

@@ -14,6 +14,12 @@ data merge storage mywar:storage {root:{perm:{soldier:{foot_soldier:{zombie:{fri
 #Foot soldier zombie enemy 
 data merge storage mywar:storage {root:{perm:{soldier:{foot_soldier:{zombie:{enemy:{CustomName:'{"text":"Foot Soldier","bold":false,"italic":false}',CustomNameVisible:1b,DeathLootTable:"mywar:item/deplete",Team:"mywar.enemy",PersistenceRequired:1b,Tags:["mywar.soldier","mywar.foot_soldier","mywar.modified"],ArmorItems:[{},{},{},{id:"minecraft:iron_helmet",Count:1b,tag:{Unbreakable:1b}}],Attributes:[{Name:generic.follow_range,Base:500},{Name:generic.movement_speed,Base:0.27},{Name:generic.attack_damage,Base:2},{Name:generic.attack_knockback,Base:1}]}}}}}}}
 
+#Archer friendly
+data merge storage mywar:storage {root:{perm:{soldier:{archer:{friendly:{CustomName:'{"text":"Archer","bold":false,"italic":false}',CustomNameVisible:1b,HandItems:[{},{id:"minecraft:bow", Count:1b}],Team:"mywar.friendly",PersistenceRequired:1b,Tags:["mywar.soldier","mywar.archer","mywar.modified"],ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{Unbreakable:1b}},{id:"minecraft:iron_helmet",Count:1b,tag:{Unbreakable:1b}}],Attributes:[{Name:generic.follow_range,Base:500},{Name:generic.movement_speed,Base:0.3},{Name:generic.attack_damage,Base:2.5},{Name:generic.attack_knockback,Base:1}]}}}}}}
+
+#Archer enemy 
+data merge storage mywar:storage {root:{perm:{soldier:{archer:{enemy:{CustomName:'{"text":"Archer","bold":false,"italic":false}',HandItems:[{},{id:"minecraft:bow", Count:1b}],CustomNameVisible:1b,DeathLootTable:"mywar:item/deplete",Team:"mywar.enemy",PersistenceRequired:1b,Tags:["mywar.soldier","mywar.archer","mywar.modified"],ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{Unbreakable:1b}},{id:"minecraft:iron_helmet",Count:1b,tag:{Unbreakable:1b}}],Attributes:[{Name:generic.follow_range,Base:500},{Name:generic.movement_speed,Base:0.3},{Name:generic.attack_damage,Base:2.5},{Name:generic.attack_knockback,Base:1}]}}}}}}
+
 ##Data for items
 
 #Waypoint
