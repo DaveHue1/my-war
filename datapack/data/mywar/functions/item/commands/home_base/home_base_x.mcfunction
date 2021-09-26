@@ -106,6 +106,6 @@ execute if score mywar.hb mywar.dummy matches 1 positioned ~-4194304 ~ ~ run fun
 execute store success score mywar.hb mywar.dummy run scoreboard players add @s[scores={mywar.dummy=-16777215..-8388608}] mywar.dummy 8388608
 execute if score mywar.hb mywar.dummy matches 1 positioned ~-8388608 ~ ~ run function mywar:item/commands/home_base/home_base_x
 execute store success score mywar.hb mywar.dummy run scoreboard players add @s[scores={mywar.dummy=..-16777216}] mywar.dummy 16777216
-execute if score mywar.hb mywar.dummy matches 1 positioned ~-16777216 ~ ~ run function mywar:item/commands/home_base_x
+execute if score mywar.hb mywar.dummy matches 1 positioned ~-16777216 ~ ~ run function mywar:item/commands/home_base/home_base_x
 
 

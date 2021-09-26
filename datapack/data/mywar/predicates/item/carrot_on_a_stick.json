@@ -4,7 +4,7 @@
     "entity": "this",
     "predicate": {
       "type": "minecraft:player",
-      "nbt": "{SelectedItem:{id:\"carrot_on_a_stick\", Count:1b}}"
+      "nbt": "{SelectedItem:{id:\"minecraft:carrot_on_a_stick\", Count:1b}}"
     }
   },
   {

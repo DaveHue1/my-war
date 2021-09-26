@@ -1,0 +1,91 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:carrot_on_a_stick",
+            "functions": [
+              {
+                "function": "minecraft:copy_nbt",
+                "source": {
+                  "type": "minecraft:storage",
+                  "source": "mywar:storage"
+                },
+                "ops": [
+                  {
+                    "source": "root.temp.wp.tag",
+                    "target": "{}",
+                    "op": "merge"
+                  }
+                ]
+              },
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  {
+					"text": "Coordinates",
+					"color": "green",
+					"italic": false
+				  },
+				  {
+					"text": "X: ",
+					"color": "yellow",
+					"italic": false,
+					"extra": [
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "mywar.wp.x",
+						  "value": "*"
+						},
+						"color": "yellow",
+						"italic": false
+					  }
+					]
+				  },
+				  {
+					"text": "Y: ",
+					"color": "yellow",
+					"italic": false,
+					"extra": [
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "mywar.wp.y",
+						  "value": "*"
+						}
+					  }
+					]
+				  },
+				  {
+					"text": "Z: ",
+					"color": "yellow",
+					"italic": false,
+					"extra": [
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "mywar.wp.z",
+						  "value": "*"
+						},
+						"italic": false
+					  }
+					]
+				  },
+				  {
+					"text": "",
+					"color": "green",
+					"italic": false
+				  }
+				],
+				"replace": true
+			  }
+            ]
+          }
+        ]
+      }
+    ]
+}

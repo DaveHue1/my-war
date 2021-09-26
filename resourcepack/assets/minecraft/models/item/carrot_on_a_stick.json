@@ -45,6 +45,12 @@
         "custom_model_data": 7
       },
       "model": "minecraft:item/deploy"
+    },
+	{
+      "predicate": {
+        "custom_model_data": 8
+      },
+      "model": "minecraft:item/wayfinder"
     }
   ]
 }
