@@ -50,7 +50,7 @@ scoreboard objectives add mywar.wp.z dummy
 ###Sets default scores
 #Conquest level
 execute unless score #mywar.conquest_level mywar.dummy matches 0.. run scoreboard players set #mywar.conquest_level mywar.dummy 10
-execute unless score #mywar.current_conquest_level mywar.dummy matches 0.. run scoreboard players set #mywar.conquest_level mywar.dummy 0
+execute unless score #mywar.current_conquest_level mywar.dummy matches 0.. run scoreboard players set #mywar.current_conquest_level mywar.dummy 0
 
 #Spawn count
 execute unless score #mywar.spawn_count mywar.dummy matches 0.. run scoreboard players set #mywar.spawn_count mywar.dummy 1

@@ -13,13 +13,15 @@ tag @s add mywar.village_captured
 give @a ink_sac{display:{Name:'{"text":"Money","color":"yellow","bold":true,"italic":false}'},CustomModelData:1,mywar.currency:1b,mywar.item:1b} 128
 function mywar:entity/village/capture/waypoint
 
+#Upgrade Advisor
+function mywar:entity/village/capture/claim/upgrade
+
 #Adds scores
 execute if score #mywar.current_conquest_level mywar.dummy matches 5 run scoreboard players add #mywar.spawn_count mywar.dummy 1 
 
 scoreboard players add #mywar.current_conquest_level mywar.dummy 1
 scoreboard players add #mywar.spawn_limit mywar.dummy 5
 execute store result bossbar mywar:conquest_level value run scoreboard players get #mywar.current_conquest_level mywar.dummy
-
 
 #Bossbars
 bossbar set mywar:conquest_level name [{"text":"Conquest Level: ","color":"yellow"},{"score":{"name":"#mywar.current_conquest_level","objective":"mywar.dummy"}}]
