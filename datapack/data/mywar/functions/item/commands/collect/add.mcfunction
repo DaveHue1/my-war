@@ -17,5 +17,20 @@ execute as @e[tag=mywar.archer] at @s run scoreboard players add #mywar.temp.col
 scoreboard players operation @s mywar.c_archer += #mywar.temp.collect.archer mywar.dummy
 scoreboard players reset #mywar.temp.collect.archer mywar.dummy
 
+#Swordsmen
+execute as @e[tag=mywar.swordsmen] at @s run scoreboard players add #mywar.temp.collect.swordsmen mywar.dummy 1 
+scoreboard players operation @s mywar.c_sm += #mywar.temp.collect.swordsmen mywar.dummy
+scoreboard players reset #mywar.temp.collect.swordsmen mywar.c_sm
+
+#Knight
+execute as @e[tag=mywar.knight] at @s run scoreboard players add #mywar.temp.collect.knight mywar.dummy 1 
+scoreboard players operation @s mywar.c_knight += #mywar.temp.collect.knight mywar.dummy
+scoreboard players reset #mywar.temp.collect.knight mywar.dummy
+
+#Mage
+execute as @e[tag=mywar.mage] at @s run scoreboard players add #mywar.temp.collect.mage mywar.dummy 1 
+scoreboard players operation @s mywar.c_mage += #mywar.temp.collect.mage mywar.dummy
+scoreboard players reset #mywar.temp.collect.mage mywar.dummy
+
 #Kill
 execute as @e[tag=mywar.foot_soldier] at @s run kill @s 

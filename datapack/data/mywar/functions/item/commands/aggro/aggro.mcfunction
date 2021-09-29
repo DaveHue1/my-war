@@ -14,7 +14,7 @@ execute as @e[tag=mywar.aggro_friendly,type=!#minecraft:undead,type!horse] at @s
 effect give @e[tag=mywar.aggro_friendly] minecraft:resistance 1 255
 
 #Getting teams
-execute as @e[tag=mywar.aggro_friendly_cloud] at @s run data modify entity @s Owner set from entity @e[team=mywar.enemy,sort=random,limit=1] UUID 
+execute as @e[tag=mywar.aggro_friendly_cloud] at @s run data modify entity @s Owner set from entity @e[type=!horse,team=mywar.enemy,sort=random,limit=1] UUID 
 
 #Removing tags
 tag @e[tag=mywar.aggro_friendly] remove mywar.aggro_friendly

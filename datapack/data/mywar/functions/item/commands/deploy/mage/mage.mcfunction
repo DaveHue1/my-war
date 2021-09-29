@@ -1,0 +1,12 @@
+#####
+#Deploys vindicator foot soldier
+#Author: Dave Hue
+#####
+
+#Summons and modifies
+summon zombie ~ ~ ~ 
+data modify entity @e[type=minecraft:zombie,sort=nearest,limit=1,tag=!mywar.modified] {} merge from storage mywar:storage root.perm.soldier.mage.friendly
+
+#Iteration
+scoreboard players remove @s mywar.c_mage 1
+execute if score @s mywar.c_mage matches 1.. run function mywar:item/commands/deploy/mage/mage 
