@@ -12,6 +12,7 @@ team join mywar.enemy @e[type=villager,distance=..200]
 
 #Spreads soldiers
 spreadplayers ~ ~ 0 50 false @e[team=mywar.enemy,tag=mywar.soldier,distance=..200] 
+spreadplayers ~ ~ 0 50 false @e[team=mywar.enemy,type=horse,distance=..200] 
 
 #Done
 tag @s add mywar.village_done

@@ -38,11 +38,6 @@ data merge storage mywar:storage {root:{perm:{soldier:{mage:{friendly:{CustomNam
 #Mage enemy 
 data merge storage mywar:storage {root:{perm:{soldier:{mage:{enemy:{CustomName:'{"text":"Mage","bold":false,"italic":false}',CustomNameVisible:1b,IsBaby:0b,DeathLootTable:"mywar:item/deplete",Team:"mywar.enemy",PersistenceRequired:1b,Tags:["mywar.soldier","mywar.mage","mywar.modified"],ArmorItems:[{id:"", Count:1b,tag:{Unbreakable:1b}},{id:"",Count:1b,tag:{Unbreakable:1b}},{id:"leather_chestplate", Count:1b,tag:{Unbreakable:1b}},{id:"minecraft:leather_helmet",Count:1b,tag:{Unbreakable:1b}}],Attributes:[{Name:generic.follow_range,Base:500},{Name:generic.movement_speed,Base:0.27},{Name:generic.attack_damage,Base:2},{Name:generic.attack_knockback,Base:1}]}}}}}}
 
-#Brute friendly
-data merge storage mywar:storage {root:{perm:{soldier:{brute:{Team:"mywar.friendly",Health:50f,Tags:["mywar.soldier"," mywar.brute"],CustomName:'{"text":"Brute","bold":false,"italic":false}',Attributes:[{Name:generic.max_health,Base:50},{Name:generic.follow_range,Base:500},{Name:generic.knockback_resistance,Base:300},{Name:generic.movement_speed,Base:0.23},{Name:generic.attack_damage,Base:5},{Name:generic.armor,Base:2}]}}}}}
-
-#Brute enemy
-data merge storage mywar:storage {root:{perm:{soldier:{brute:{Team:"mywar.enemy",Health:50f,Tags:["mywar.soldier"," mywar.brute"],CustomName:'{"text":"Brute","bold":false,"italic":false}',Attributes:[{Name:generic.max_health,Base:50},{Name:generic.follow_range,Base:500},{Name:generic.knockback_resistance,Base:300},{Name:generic.movement_speed,Base:0.23},{Name:generic.attack_damage,Base:5},{Name:generic.armor,Base:2}]}}}}}
 
 
 ##Data for items
