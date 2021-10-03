@@ -19,4 +19,7 @@ execute if score #mywar.mage_fight mywar.dummy matches 3.. run execute as @e[tag
 
 execute if score #mywar.mage_fight mywar.dummy matches 3.. run scoreboard players reset #mywar.mage_fight mywar.dummy
 
+#Teams for villagers
+execute as @e[type=villager,team=!mywar.friendly] at @s run team join mywar.enemy @s
+
 schedule function mywar:clocks/one_second_clock 1s
