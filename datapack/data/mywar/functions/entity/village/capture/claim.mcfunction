@@ -20,7 +20,7 @@ execute if score #mywar.current_conquest_level mywar.dummy matches 15 run scoreb
 execute if score #mywar.current_conquest_level mywar.dummy matches 25 run scoreboard players add #mywar.spawn_count mywar.dummy 1 
 
 scoreboard players add #mywar.current_conquest_level mywar.dummy 1
-scoreboard players add #mywar.spawn_limit mywar.dummy 5
+scoreboard players add #mywar.spawn_limit mywar.dummy 2
 execute store result bossbar mywar:conquest_level value run scoreboard players get #mywar.current_conquest_level mywar.dummy
 
 #Upgrade Advisor

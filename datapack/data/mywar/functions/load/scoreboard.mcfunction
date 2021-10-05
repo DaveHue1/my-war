@@ -39,6 +39,9 @@ scoreboard objectives add mywar.traded minecraft.custom:minecraft.traded_with_vi
 #Right clicking
 scoreboard objectives add mywar.coas minecraft.used:minecraft.carrot_on_a_stick
 
+#Collect limit
+scoreboard objectives add mywar.cl dummy
+
 #Tax limit
 scoreboard objectives add mywar.tax_limit dummy
 
@@ -60,6 +63,9 @@ scoreboard objectives add mywar.wp.z dummy
 #Conquest level
 execute unless score #mywar.conquest_level mywar.dummy matches 0.. run scoreboard players set #mywar.conquest_level mywar.dummy 10
 execute unless score #mywar.current_conquest_level mywar.dummy matches 0.. run scoreboard players set #mywar.current_conquest_level mywar.dummy 0
+
+#Collect limit
+execute as @a unless score @s mywar.cl matches 0.. run scoreboard players set @s mywar.cl 0
 
 #Spawn count
 execute unless score #mywar.spawn_count mywar.dummy matches 0.. run scoreboard players set #mywar.spawn_count mywar.dummy 1

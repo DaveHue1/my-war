@@ -4,7 +4,7 @@
 #####
 
 #Summons and modifies
-summon horse ~ ~ ~ {Team:"mywar.enemy",Tags:["mywar.horse"],Passengers:[{id:"minecraft:wither_skeleton"}],ArmorItem:{id:"minecraft:iron_horse_armor",Count:1b}}
+summon horse ~ ~ ~ {Team:"mywar.friendly",Tags:["mywar.horse"],Passengers:[{id:"minecraft:wither_skeleton"}],ArmorItem:{id:"minecraft:iron_horse_armor",Count:1b}}
 data modify entity @e[type=minecraft:wither_skeleton,sort=nearest,limit=1,tag=!mywar.modified] {} merge from storage mywar:storage root.perm.soldier.knight.friendly
 
 #Iteration
