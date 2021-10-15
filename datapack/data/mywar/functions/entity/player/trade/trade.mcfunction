@@ -3,6 +3,12 @@
 #Author: DaveHue
 #####
 
+#Calculations for collect limit 
+scoreboard players reset #mywar.cl_temp mywar.dummy
+scoreboard players operation #mywar.cl_temp mywar.dummy = @s mywar.cl 
+scoreboard players operation #mywar.cl_temp mywar.dummy -= #mywar.cl_perm mywar.dummy
+
+
 #Foot soldier
 execute if predicate mywar:player/trade/foot_soldier run function mywar:entity/player/trade/foot_soldier/foot_soldier
 
@@ -18,7 +24,6 @@ execute if predicate mywar:player/trade/knight run function mywar:entity/player/
 #Mage
 execute if predicate mywar:player/trade/mage run function mywar:entity/player/trade/mage/mage
 
-
-
-#Reset trade score
-scoreboard players reset @s mywar.trade
+#Reset scores
+scoreboard players reset @s mywar.traded
+scoreboard players reset #mywar.cl_temp mywar.dummy

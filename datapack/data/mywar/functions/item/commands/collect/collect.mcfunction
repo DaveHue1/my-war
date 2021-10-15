@@ -9,4 +9,4 @@ execute as @e[tag=mywar.collected] at @s run function mywar:item/commands/collec
 execute if score @s mywar.cl matches 100.. run tellraw @s {"text":"Max limit reached","color":"red"}
 
 #Message
-execute if score @s mywar.cl matches ..100 run tellraw @s {"text":"Collecting soldiers!","color":"yellow"}
+execute if score @s mywar.cl matches ..99 run tellraw @s {"text":"Collecting soldiers!","color":"yellow"}

@@ -6,7 +6,7 @@
       "weight": 1,
       "functions": [{
           "function": "minecraft:set_nbt",
-          "tag": "{LodestonePos:{X:0,Y:60,Z:0},LodestoneTracked:0b,LodestoneDimension:\"minecraft:overworld\",HideFlags:2,mywar.village_tracker:1b,mywar.item:1b,CustomModelData:330000}"
+          "tag": "{display:{Name:'{\"text\":\"Village Tracker\",\"color\":\"green\",\"italic\":false}'},LodestonePos:{X:0,Y:60,Z:0},LodestoneTracked:0b,LodestoneDimension:\"minecraft:overworld\",HideFlags:2,mywar.village_tracker:1b,mywar.item:1b,CustomModelData:330000}"
         }
       ],
       "name": "minecraft:compass"

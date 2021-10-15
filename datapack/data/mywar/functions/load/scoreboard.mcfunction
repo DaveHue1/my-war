@@ -79,4 +79,11 @@ execute unless score #mywar.replenish_limit mywar.dummy matches 0.. run scoreboa
 #Enemies remaining 
 execute unless score #mywar.enemies_remaining mywar.dummy matches 0.. run scoreboard players set #mywar.enemies_remaining mywar.dummy 0
 
+#Global collect limit
+scoreboard players set #mywar.cl_perm mywar.dummy 100
+scoreboard players set #mywar.c_collect_message mywar.dummy -1
+
+#Return collect money values
+scoreboard players set #mywar.temp.archer.remove.constant mywar.dummy 4
+
 
