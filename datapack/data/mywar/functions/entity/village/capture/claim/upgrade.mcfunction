@@ -1,5 +1,5 @@
 #####
-#Upgrade advisor
+#Upgrade advisors
 #Author: DaveHue
 #####
 
