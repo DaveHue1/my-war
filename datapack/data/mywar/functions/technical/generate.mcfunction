@@ -7,6 +7,7 @@
 execute as @a[tag=mywar.warning,sort=nearest,limit=1] run function mywar:item/give/commands_items
 execute as @a[tag=mywar.warning,sort=nearest,limit=1] run function mywar:item/give/village_tracker
 execute as @a[tag=mywar.warning,sort=nearest,limit=1] run function mywar:item/give/money
+execute as @a[tag=mywar.warning,sort=nearest,limit=1] run function mywar:item/give/money
 give @a cooked_beef 16
 
 #Creates home base structure

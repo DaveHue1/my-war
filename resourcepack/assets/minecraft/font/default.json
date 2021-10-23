@@ -4,7 +4,7 @@
       "type": "bitmap",
       "file": "minecraft:logo/logo.png",
       "ascent": 7,
-      "height": 70,
+      "height": 10,
       "chars": [
         "\uE001"
       ]
@@ -116,7 +116,213 @@
       "chars": [
         "\uE013"
       ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:guide_book/greeting.png",
+      "ascent": 32,
+      "height": 146,
+      "chars": [
+        "\uE014"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:guide_book/faq.png",
+      "ascent": 32,
+      "height": 146,
+      "chars": [
+        "\uE015"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:guide_book/faq_page.png",
+      "ascent": 32,
+      "height": 146,
+      "chars": [
+        "\uE016"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:guide_book/index.png",
+      "ascent": 32,
+      "height": 146,
+      "chars": [
+        "\uE017"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:item/home.png",
+      "ascent": 32,
+      "height": 32,
+      "chars": [
+        "\uE018"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:item/sword.png",
+      "ascent": 32,
+      "height": 32,
+      "chars": [
+        "\uE020"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:item/foot_soldier.png",
+      "ascent": 7,
+      "height": 11,
+      "chars": [
+        "\uE019"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:item/archer.png",
+      "ascent": 7,
+      "height": 11,
+      "chars": [
+        "\uE021"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:item/swordsmen.png",
+      "ascent": 7,
+      "height": 11,
+      "chars": [
+        "\uE022"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:item/knight.png",
+      "ascent": 7,
+      "height": 11,
+      "chars": [
+        "\uE023"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:item/mage.png",
+      "ascent": 7,
+      "height": 11,
+      "chars": [
+        "\uE024"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:item/foot_soldier.png",
+      "ascent": 32,
+      "height": 32,
+      "chars": [
+        "\uE025"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:item/deploy.png",
+      "ascent": 7,
+      "height": 11,
+      "chars": [
+        "\uE026"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:item/compass.png",
+      "ascent": 7,
+      "height": 11,
+      "chars": [
+        "\uE027"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:item/detonate.png",
+      "ascent": 32,
+      "height": 32,
+      "chars": [
+        "\uE028"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:item/wayfinder.png",
+      "ascent": 32,
+      "height": 32,
+      "chars": [
+        "\uE029"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:item/compass.png",
+      "ascent": 32,
+      "height": 32,
+      "chars": [
+        "\uE030"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:item/sword.png",
+      "ascent": 32,
+      "height": 32,
+      "chars": [
+        "\uE031"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:item/compass.png",
+      "ascent": 7,
+      "height": 11,
+      "chars": [
+        "\uE032"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:logo/creeper_magnet.png",
+      "ascent": 7,
+      "height": 50,
+      "chars": [
+        "\uE033"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:logo/rag.png",
+      "ascent": 7,
+      "height": 50,
+      "chars": [
+        "\uE034"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:logo/makai_symphony.png",
+      "ascent": 7,
+      "height": 50,
+      "chars": [
+        "\uE035"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "minecraft:item/detonate.png",
+      "ascent": 7,
+      "height": 11,
+      "chars": [
+        "\uE036"
+      ]
     }
   ]
 }
-/give @p written_book{pages:['["",{"text":" \\u0020 \\u0020 \\u0020\\uE001","color":"white"},{"text":"\\n\\n\\n\\n\\n\\n\\n\\n\\n","color":"reset"},{"text":"Welcome to My War! This guide will explain everything about the pack.","color":"black"},{"text":"\\n\\n\\n\\n\\n ","color":"reset"}]','["",{"text":"In My War you must establish your empire by conquering villages and their defenses. \\n\\n"},{"text":"Home Base","bold":true},{"text":"\\uE003","bold":true,"color":"white"},{"text":"\\n\\nThis is your base of operations which you can teleport back to anytime. The ","color":"reset"},{"text":"Advisor","color":"blue"},{"text":" is located here, which you can buy soldiers from. \\n\\n\\n ","color":"reset"}]','["",{"text":"Money","bold":true},{"text":"\\uE004","bold":true,"color":"white"},{"text":"\\n\\nMoney is used to buy soldiers from the ","color":"reset"},{"text":"Advisor","color":"blue"},{"text":". It can be acquired by conquering villages or taxing them. \\n\\n","color":"reset"},{"text":"Commands","bold":true},{"text":"\\nThere are various commands that are used to control the game.","color":"reset"}]','["",{"text":"\\n"},{"text":"Aggro","color":"dark_gray"},{"text":"\\uE005","color":"white"},{"text":"\\n\\n","color":"reset"},{"text":"Aggros your soldiers to fight enemy defenses. ","color":"black"},{"text":"\\n\\n","color":"reset"},{"text":"Collect","color":"dark_gray"},{"text":"\\uE006","color":"white"},{"text":"\\n\\n","color":"reset"},{"text":"Turns soldiers back into spawn eggs.","color":"black"},{"text":"\\n\\n\\n ","color":"reset"}]','["",{"text":"Home","color":"dark_gray"},{"text":"\\uE007","color":"white"},{"text":"\\n\\nTeleports player back to the ","color":"reset"},{"text":"Home Base.","bold":true},{"text":"\\n\\n","color":"reset"},{"text":"Spread Soldiers","color":"dark_gray"},{"text":"\\uE008","color":"white"},{"text":"\\n\\nIn the name, spreads soldiers in a certain radius. \\n ","color":"reset"}]','["",{"text":"Tax Villages","color":"dark_gray"},{"text":"\\uE009","color":"white"},{"text":"\\n\\nTaxes all conquered villages. Has a cooldown of one minute.\\n\\n","color":"reset"},{"text":"Detonate","color":"dark_gray"},{"text":"\\uE010","color":"white"},{"text":"\\n\\nPlaces an existing ","color":"reset"},{"text":"Bomber","color":"red"},{"text":" in front of you to detonate. Useful for blowing up village walls. \\n\\n\\n ","color":"reset"}]','["",{"text":"Villages","bold":true},{"text":"\\n\\nVillages will now spawn with ","color":"reset"},{"text":"Towers","color":"blue"},{"text":". You must go to the top of these to capture them. They will also now spawn\\ndefenses which you must defeat. A reward and ","color":"reset"},{"text":"Wayfinder ","color":"blue"},{"text":"are given to the player upon conquest. \\n\\n ","color":"reset"}]','["",{"text":"Wayfinders","bold":true},{"text":"\\uE011","bold":true,"color":"white"},{"text":"\\n\\nThis will be given upon conquering a village. Rename the name tag in the anvil provided and then rename the armor stand. The Wayfinder will then drop itself. It can be placed in the ","color":"reset"},{"text":"Home Base","bold":true},{"text":" and act as a portal to get back to the village. Keep in mind they can only be placed once. \\u0020\\n ","color":"reset"}]','["",{"text":"Conquest Level","bold":true},{"text":" \\n\\nEvery time the player conquers a village, their conquest level will go up by one point. This will increase the difficulty of villages and unlock new soldiers.","color":"reset"}]'],title:Book,author:"http://minecraft.tools/"}
