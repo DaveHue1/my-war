@@ -4,6 +4,7 @@
 ##############
 
 #Gives the player items
+execute as @a[tag=mywar.warning,sort=nearest,limit=1] run function mywar:item/give/guide_book
 execute as @a[tag=mywar.warning,sort=nearest,limit=1] run function mywar:item/give/commands_items
 execute as @a[tag=mywar.warning,sort=nearest,limit=1] run function mywar:item/give/village_tracker
 execute as @a[tag=mywar.warning,sort=nearest,limit=1] run function mywar:item/give/money

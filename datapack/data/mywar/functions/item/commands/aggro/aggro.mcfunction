@@ -3,6 +3,9 @@
 #Author: DaveHue
 #####
 
+#Sound 
+playsound minecraft:block.note_block.bass master @s ~ ~ ~
+
 #Tag
 tag @e[team=mywar.friendly,tag=mywar.soldier,sort=random,limit=50] add mywar.aggro_friendly
 

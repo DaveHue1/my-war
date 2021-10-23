@@ -22,4 +22,7 @@ execute if score #mywar.mage_fight mywar.dummy matches 3.. run scoreboard player
 #Teams for villagers
 execute as @e[type=villager,team=!mywar.friendly] at @s run team join mywar.enemy @s
 
+#Kill stairs 
+execute as @e[tag=mywar.stairs] at @s run execute if score @s mywar.stairs matches 0 run kill @s
+
 schedule function mywar:clocks/one_second_clock 1s

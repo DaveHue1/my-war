@@ -13,11 +13,16 @@ tag @s add mywar.village_captured
 give @a ink_sac{display:{Name:'{"text":"Money","color":"yellow","bold":true,"italic":false}'},CustomModelData:1,mywar.currency:1b,mywar.item:1b} 128
 function mywar:entity/village/capture/waypoint
 
+#Summon waypoint right click
+summon villager ~ ~2 ~ {NoAI:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mywar.wpr"],ActiveEffects:[{Id:14b,Amplifier:255b,Duration:20000000,ShowParticles:0b}],VillagerData:{profession:"minecraft:nitwit"}}
+summon villager ~ ~ ~ {NoAI:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mywar.wpr"],ActiveEffects:[{Id:14b,Amplifier:255b,Duration:20000000,ShowParticles:0b}],VillagerData:{profession:"minecraft:nitwit"}}
+summon villager ~ ~-2 ~ {NoAI:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mywar.wpr"],ActiveEffects:[{Id:14b,Amplifier:255b,Duration:20000000,ShowParticles:0b}],VillagerData:{profession:"minecraft:nitwit"}}
+
 #Adds scores
 execute if score #mywar.current_conquest_level mywar.dummy matches 5 run scoreboard players add #mywar.spawn_count mywar.dummy 1 
 execute if score #mywar.current_conquest_level mywar.dummy matches 10 run scoreboard players add #mywar.spawn_count mywar.dummy 1 
 execute if score #mywar.current_conquest_level mywar.dummy matches 15 run scoreboard players add #mywar.spawn_count mywar.dummy 1 
-execute if score #mywar.current_conquest_level mywar.dummy matches 25 run scoreboard players add #mywar.spawn_count mywar.dummy 1 
+execute if score #mywar.current_conquest_level mywar.dummy matches 20 run scoreboard players add #mywar.spawn_count mywar.dummy 1 
 
 scoreboard players add #mywar.current_conquest_level mywar.dummy 1
 scoreboard players add #mywar.spawn_limit mywar.dummy 2

@@ -3,6 +3,9 @@
 #Author: Dave Hue
 #####
 
+#Sound 
+playsound minecraft:block.note_block.bass master @s ~ ~ ~
+
 #Foot soldier
 function mywar:item/commands/deploy/foot_soldier/deploy
 

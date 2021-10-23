@@ -23,6 +23,12 @@ scoreboard objectives add mywar.c_knight dummy
 scoreboard objectives add mywar.c_mage dummy
 
 ##Misc
+#Castle stairs objective
+scoreboard objectives add mywar.stairs dummy
+
+#Waypoint rightclick objective
+scoreboard objectives add mywar.vrc minecraft.custom:minecraft.talked_to_villager
+
 #Deplete objective
 scoreboard objectives add mywar.er dummy
 

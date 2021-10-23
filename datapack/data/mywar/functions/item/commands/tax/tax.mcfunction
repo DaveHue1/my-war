@@ -3,6 +3,9 @@
 #Author: Dave Hue
 #####
 
+#Sound 
+playsound minecraft:block.note_block.bass master @s ~ ~ ~
+
 #Stores conquered villages
 execute store result score #mywar.tax mywar.dummy run scoreboard players get #mywar.current_conquest_level mywar.dummy
 

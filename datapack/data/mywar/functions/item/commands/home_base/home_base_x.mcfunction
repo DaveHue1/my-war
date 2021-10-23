@@ -4,6 +4,9 @@
 #Code used with permission
 ########
 
+#Sound
+playsound minecraft:block.note_block.bass master @s ~ ~ ~
+
 execute if entity @s[scores={mywar.dummy=0}] run function mywar:item/commands/home_base/home_base_y_init
 
 execute store success score mywar.hb mywar.dummy run scoreboard players remove @s[scores={mywar.dummy=1}] mywar.dummy 1
