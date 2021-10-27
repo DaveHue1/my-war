@@ -22,6 +22,10 @@ scoreboard objectives add mywar.c_knight dummy
 #Mage
 scoreboard objectives add mywar.c_mage dummy
 
+##Trigger objectives 
+#Guide Book objective
+scoreboard objectives add mywar.book trigger
+
 ##Misc
 #Castle stairs objective
 scoreboard objectives add mywar.stairs dummy
