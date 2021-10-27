@@ -76,7 +76,7 @@
 					]
 				  },
 				  {
-					"text": "Shift to update outside of old village range",
+					"text": "Shift while holding to update to nearest village",
 					"color": "green",
 					"italic": false
 				  }
