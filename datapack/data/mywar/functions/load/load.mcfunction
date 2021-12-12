@@ -4,21 +4,21 @@
 ##############
 
 #Data
-function mywar:load/data
+function mywar:load/data/data
 
 #Bossbars
-function mywar:load/bossbars
+function mywar:load/bossbars/bossbars
 
 #Scoreboard
-function mywar:load/scoreboard
+function mywar:load/scoreboard/scoreboard
 
 #Initial setup
-function mywar:load/setup
+function mywar:load/setup/setup
 
 #Clocks
-function mywar:load/clocks
+function mywar:load/clocks/clocks
 
 #Teams
-function mywar:load/team
+function mywar:load/team/team
 
 

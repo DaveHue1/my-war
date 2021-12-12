@@ -6,8 +6,8 @@
 #Calculations for collect limit 
 scoreboard players reset #mywar.cl_temp mywar.dummy
 scoreboard players operation #mywar.cl_temp mywar.dummy = @s mywar.cl 
-scoreboard players operation #mywar.cl_temp mywar.dummy -= #mywar.cl_perm mywar.dummy
-
+scoreboard players operation #mywar.cl_temp mywar.dummy -= #mywar.global_soldier_limit mywar.dummy
+scoreboard players operation #mywar.cl_temp mywar.dummy *= #mywar.negative_value mywar.dummy
 
 #Foot soldier
 execute if predicate mywar:player/trade/foot_soldier run function mywar:entity/player/trade/foot_soldier/foot_soldier
@@ -26,4 +26,3 @@ execute if predicate mywar:player/trade/mage run function mywar:entity/player/tr
 
 #Reset scores
 scoreboard players reset @s mywar.traded
-scoreboard players reset #mywar.cl_temp mywar.dummy

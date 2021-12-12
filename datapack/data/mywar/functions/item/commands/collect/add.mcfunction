@@ -3,14 +3,13 @@
 #Author: Dave Hue
 #####
 
-execute as @s[tag=mywar.foot_soldier,type=zombie] at @s run execute as @a[scores={mywar.coas=1..}] at @s run function mywar:item/commands/collect/zombie
-execute as @s[tag=mywar.foot_soldier,type=vindicator] at @s run execute as @a[scores={mywar.coas=1..}] at @s run function mywar:item/commands/collect/illager
-execute as @s[tag=mywar.archer] at @s run execute as @a[scores={mywar.coas=1..}] at @s run function mywar:item/commands/collect/archer
-execute as @s[tag=mywar.swordsmen] at @s run execute as @a[scores={mywar.coas=1..}] at @s run function mywar:item/commands/collect/swordsmen
-execute as @s[tag=mywar.knight] at @s run execute as @a[scores={mywar.coas=1..}] at @s run function mywar:item/commands/collect/knight
-execute as @s[tag=mywar.mage] at @s run execute as @a[scores={mywar.coas=1..}] at @s run function mywar:item/commands/collect/mage
+execute as @s[tag=mywar.foot_soldier] at @s run function mywar:item/commands/collect/foot_soldier/foot_soldier
+execute as @s[tag=mywar.archer] at @s run execute as @a[scores={mywar.coas=1..}] run function mywar:item/commands/collect/archer/archer
+execute as @s[tag=mywar.swordsmen] at @s run execute as @a[scores={mywar.coas=1..}] run function mywar:item/commands/collect/swordsmen/swordsmen
+execute as @s[tag=mywar.knight] at @s run execute as @a[scores={mywar.coas=1..}] run function mywar:item/commands/collect/knight/knight
+execute as @s[tag=mywar.mage] at @s run execute as @a[scores={mywar.coas=1..}] run function mywar:item/commands/collect/mage/mage
 
-execute as @s[tag=mywar.knight] at @s run kill @e[type=horse,sort=nearest,limit=1,team=mywar.friendly]
-kill @s
+particle minecraft:enchant ~ ~1 ~ 0.01 1 0.01 0.2 20
+tp @s ~ -66 ~
 
 

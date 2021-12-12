@@ -23,4 +23,3 @@ tellraw @s {"text":"Soldier limit reached","color":"red"}
 
 #Reset scores
 scoreboard players reset @s mywar.traded
-scoreboard players reset #mywar.cl_temp mywar.dummy
