@@ -4,10 +4,8 @@
 #####
 
 #Set score
-execute if score @e[tag=mywar.village,sort=nearest,limit=1] mywar.er matches 1.. run scoreboard players remove @e[tag=mywar.village,sort=nearest,limit=1] mywar.er 1
-execute store result bossbar mywar:enemies_remaining value run scoreboard players get @e[tag=mywar.village,sort=nearest,limit=1] mywar.er
-bossbar set mywar:enemies_remaining name [{"text":"Enemies Remaining: ","color":"red"},{"score":{"name":"@e[tag=mywar.village,sort=nearest,limit=1]","objective":"mywar.er"}}]
-bossbar set mywar:enemies_remaining visible true
+function mywar:entity/village/deplete/team_check
+execute if entity @e[type=marker,sort=nearest,limit=1,tag=mywar.village,scores={mywar.er=1..}] run tellraw @a[sort=nearest,limit=1] [{"text":"Enemies remaining to capture tower: ","color":"red"},{"score":{"name":"@e[type=marker,sort=nearest,limit=1]","objective":"mywar.er"},"color":"yellow","hoverEvent":{"action":"show_text","contents":[{"text":"","color":"yellow"}]}},{"text":"!","color":"yellow","hoverEvent":{"action":"show_text","contents":[{"text":"","color":"green"}]}}]
 
 #Kill entity
 kill @s

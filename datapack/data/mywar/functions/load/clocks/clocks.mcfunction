@@ -5,7 +5,7 @@
 
 ##Set up clocks
 #1 second clock
-function mywar:clocks/one_second_clock
+schedule function mywar:technical/clocks/one_second_clock 1s replace
 
 #Ten second clock
-function mywar:clocks/ten_second_clock
+schedule function mywar:technical/clocks/ten_second_clock 10s replace

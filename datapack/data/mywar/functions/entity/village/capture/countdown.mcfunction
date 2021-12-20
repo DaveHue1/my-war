@@ -11,16 +11,14 @@ scoreboard players remove @s mywar.capture 1
 
 ##Messages
 #Message for countdown
-tellraw @a[distance=..200] [{"text":"Capturing village in ","color":"yellow"},{"score":{"name":"@s","objective":"mywar.capture"},"color":"yellow","hoverEvent":{"action":"show_text","contents":[{"text":"","color":"yellow"}]}},{"text":". . .","color":"yellow","hoverEvent":{"action":"show_text","contents":[{"text":"","color":"yellow"}]}}]
+tellraw @a[distance=..200] [{"text":"Village will be captured in ","color":"yellow"},{"score":{"name":"@s","objective":"mywar.capture"},"color":"yellow","hoverEvent":{"action":"show_text","contents":[{"text":"","color":"yellow"}]}},{"text":". . .","color":"yellow","hoverEvent":{"action":"show_text","contents":[{"text":"","color":"yellow"}]}}]
 
 #Message for capture
-execute if score @s mywar.capture matches 0 run tellraw @a[distance=..200] {"text":"Village captured!","color":"green"}
+execute if score @s mywar.capture matches 0 run tellraw @a[distance=..200] {"text":"Village captured!","color":"blue"}
 
 #Capture sequence 
 execute if score @s mywar.capture matches 0 run function mywar:entity/village/capture/claim
 
-#Bossbar 
-scoreboard players add #mywar.conquest_level mywar.dummy 1
-execute store result bossbar mywar:conquest_level max run scoreboard players get #mywar.conquest_level mywar.dummy
+
 
 

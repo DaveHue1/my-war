@@ -1,23 +1,11 @@
 #####
-#Aggros soldiers to fight enemy
+#Decides which soldiers to aggro based off player's team
 #Author: DaveHue
 #####
 
-#Sound 
-playsound minecraft:block.note_block.bass master @s ~ ~ ~
+execute if entity @s[team=mywar.blue] run function mywar:item/commands/aggro/blue_team
+execute if entity @s[team=mywar.red] run function mywar:item/commands/aggro/red_team
+execute if entity @s[team=mywar.green] run function mywar:item/commands/aggro/green_team
+execute if entity @s[team=mywar.yellow] run function mywar:item/commands/aggro/yellow_team
 
-#Tag
-tag @e[team=mywar.friendly,tag=mywar.soldier,sort=random,limit=50] add mywar.aggro_friendly
 
-#Clouds
-execute as @e[tag=mywar.aggro_friendly,type=#minecraft:undead,type=!horse] at @s run summon area_effect_cloud ~ ~ ~ {Tags:["mywar.aggro_friendly_cloud"],Particle:"crit",Radius:1f,Duration:20,Effects:[{Id:6b,Amplifier:1b,Duration:0}]}
-execute as @e[tag=mywar.aggro_friendly,type=!#minecraft:undead,type=!horse] at @s run summon area_effect_cloud ~ ~ ~ {Tags:["mywar.aggro_friendly_cloud"],Particle:"crit",Radius:1f,Duration:20,Effects:[{Id:7b,Amplifier:1b,Duration:0}]}
-
-#Resistance
-effect give @e[tag=mywar.aggro_friendly] minecraft:resistance 1 255
-
-#Getting teams
-execute as @e[tag=mywar.aggro_friendly_cloud] at @s run data modify entity @s Owner set from entity @e[type=!horse,team=mywar.enemy,sort=random,limit=1] UUID 
-
-#Removing tags
-tag @e[tag=mywar.aggro_friendly] remove mywar.aggro_friendly

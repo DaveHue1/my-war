@@ -4,8 +4,8 @@
 #####
 
 #Summons and modifies
-summon skeleton ~ ~ ~ 
-data modify entity @e[type=minecraft:skeleton,sort=nearest,limit=1,tag=!mywar.modified] {} merge from storage mywar:storage root.perm.soldier.archer.friendly
+summon skeleton ~ ~ ~
+data modify entity @e[type=minecraft:skeleton,sort=nearest,limit=1,tag=!mywar.modified] {} merge from storage mywar:storage root.perm.soldier.archer
 
 #Iteration
 scoreboard players remove @s mywar.c_archer 1

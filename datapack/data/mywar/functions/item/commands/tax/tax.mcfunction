@@ -3,15 +3,18 @@
 #Author: Dave Hue
 #####
 
-#Sound 
+#Plays sound 
 playsound minecraft:block.note_block.bass master @s ~ ~ ~
 
-#Stores conquered villages
-execute store result score #mywar.tax mywar.dummy run scoreboard players get #mywar.current_conquest_level mywar.dummy
+#Stores the number to get money from
+scoreboard players operation #mywar.tax_collection_limit_temp mywar.dummy = @s mywar.tax_collection_limit
+execute store result score @s mywar.tax_number run scoreboard players operation @s mywar.tax_collection_limit *= @s mywar.current_conquest_level
+scoreboard players operation @s mywar.tax_collection_limit = #mywar.tax.collection_limit_temp mywar.dummy
+scoreboard players set @s mywar.tax_collection_limit 0
 
-#Tax score
-execute unless score @s mywar.tax_limit matches 0.. run scoreboard players set @s mywar.tax_limit 0
+#Iterates through the tax number to get the appropriate amount of money
+execute if score @s mywar.tax_number matches 1.. run tellraw @s {"text":"Money collected!","color":"green"}
+execute unless score @s mywar.tax_number matches 1.. run tellraw @s [{"text":"No money to collect at this time. Be patient!","color":"red"},{"text":" Collect in "},{"score":{"name":"#mywar.tax_timer_left2","objective":"mywar.dummy"}},{"text":" seconds"}]
+execute if score @s mywar.tax_number matches 1.. run function mywar:item/commands/tax/iter
 
-#Taxes
-execute if score @s mywar.tax_limit matches 0 if score #mywar.tax mywar.dummy matches 1.. run function mywar:item/commands/tax/iter
-execute if score @s mywar.tax_limit matches 1.. run tellraw @s [{"score":{"name":"*","objective":"mywar.tax_limit"},"color":"red","italic":false},{"text":" "},{"text":"second cooldown!","color":"red","italic":false}]
+

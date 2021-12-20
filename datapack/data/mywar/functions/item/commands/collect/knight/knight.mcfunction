@@ -5,5 +5,5 @@
 
 #Knight
 scoreboard players add #mywar.temp.collect.knight mywar.dummy 1 
-scoreboard players operation @s mywar.c_knight += #mywar.temp.collect.knight mywar.dummy
+scoreboard players operation @a[predicate=mywar:commands/collect,sort=nearest,limit=1] mywar.c_knight += #mywar.temp.collect.knight mywar.dummy
 scoreboard players reset #mywar.temp.collect.knight mywar.dummy

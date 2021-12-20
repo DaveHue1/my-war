@@ -1,8 +1,9 @@
 #####
-#Decides which foot soldier variant to collect
+#Collects foot soldier
 #Author: Dave Hue
 #####
 
-#Decide which variant to collect
-execute as @s[type=zombie] at @s run execute as @a[scores={mywar.coas=1..}] run function mywar:item/commands/collect/foot_soldier/zombie/zombie
-execute as @s[type=vindicator] at @s run execute as @a[scores={mywar.coas=1..}] run function mywar:item/commands/collect/foot_soldier/vindicator/vindicator
+#Foot soldiers
+scoreboard players add #mywar.temp.collect.foot_soldier.illager mywar.dummy 1 
+scoreboard players operation @a[predicate=mywar:commands/collect,sort=nearest,limit=1] mywar.c_fs_i += #mywar.temp.collect.foot_soldier.illager mywar.dummy
+scoreboard players reset #mywar.temp.collect.foot_soldier.illager mywar.dummy

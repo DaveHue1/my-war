@@ -6,9 +6,6 @@
 #Data
 function mywar:load/data/data
 
-#Bossbars
-function mywar:load/bossbars/bossbars
-
 #Scoreboard
 function mywar:load/scoreboard/scoreboard
 
