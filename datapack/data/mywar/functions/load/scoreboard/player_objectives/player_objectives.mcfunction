@@ -13,6 +13,9 @@ scoreboard objectives add mywar.mage_restore dummy
 #Conquest level
 scoreboard objectives add mywar.current_conquest_level dummy 
 
+#Id objective 
+scoreboard objectives add mywar.id dummy
+
 #Stat objectives
 #Collect limit objective
 scoreboard objectives add mywar.cl dummy
@@ -25,3 +28,8 @@ scoreboard objectives add mywar.spawn_limit dummy
 
 #Replenish objective
 scoreboard objectives add mywar.replenish_limit dummy
+
+#Villager tracker
+scoreboard objectives add mywar.vt.x dummy
+scoreboard objectives add mywar.vt.y dummy
+scoreboard objectives add mywar.vt.z dummy

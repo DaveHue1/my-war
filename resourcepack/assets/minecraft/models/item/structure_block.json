@@ -6,6 +6,12 @@
         "custom_model_data": 1
       },
       "model": "minecraft:item/money"
+    },
+	{
+      "predicate": {
+        "custom_model_data": 2
+      },
+      "model": "minecraft:item/stack"
     }
   ]
 }

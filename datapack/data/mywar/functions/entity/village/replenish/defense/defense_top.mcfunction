@@ -12,3 +12,4 @@ function mywar:entity/village/replenish/team/team
 
 #Add tag
 tag @e[type=skeleton,tag=mywar.archer,tag=mywar.modified,tag=mywar.soldier,sort=nearest,limit=1] add mywar.defense_top
+tag @e[type=skeleton,tag=mywar.archer,tag=mywar.modified,tag=mywar.soldier,sort=nearest,limit=1] add mywar.non_collect

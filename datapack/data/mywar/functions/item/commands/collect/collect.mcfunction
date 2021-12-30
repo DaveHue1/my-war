@@ -7,10 +7,10 @@
 playsound minecraft:block.note_block.bass master @s ~ ~ ~
 
 #Adds soldier to the list based on what team it is
-execute if score @s[team=mywar.blue] mywar.cl < #mywar.global_soldier_limit mywar.dummy if entity @e[team=mywar.blue,tag=mywar.soldier,sort=random,distance=..100] run execute store result score #mywar.tag_collect mywar.dummy run tag @e[team=mywar.blue,tag=mywar.soldier,sort=random,distance=..100] add mywar.collected
-execute if score @s[team=mywar.red] mywar.cl < #mywar.global_soldier_limit mywar.dummy if entity @e[team=mywar.red,tag=mywar.soldier,sort=random,distance=..100] run execute store result score #mywar.tag_collect mywar.dummy run tag @e[team=mywar.red,tag=mywar.soldier,sort=random,distance=..100] add mywar.collected
-execute if score @s[team=mywar.yellow] mywar.cl < #mywar.global_soldier_limit mywar.dummy if entity @e[team=mywar.yellow,tag=mywar.soldier,sort=random,distance=..100] run execute store result score #mywar.tag_collect mywar.dummy run tag @e[team=mywar.yellow,tag=mywar.soldier,sort=random,distance=..100] add mywar.collected
-execute if score @s[team=mywar.green] mywar.cl < #mywar.global_soldier_limit mywar.dummy if entity @e[team=mywar.green,tag=mywar.soldier,sort=random,distance=..100] run execute store result score #mywar.tag_collect mywar.dummy run tag @e[team=mywar.green,tag=mywar.soldier,sort=random,distance=..100] add mywar.collected
+execute if score @s[team=mywar.blue] mywar.cl < #mywar.global_soldier_limit mywar.dummy if entity @e[team=mywar.blue,tag=mywar.soldier,sort=random,distance=..100] run execute store result score #mywar.tag_collect mywar.dummy run tag @e[team=mywar.blue,tag=mywar.soldier,sort=random,distance=..100,tag=!mywar.non_collect] add mywar.collected
+execute if score @s[team=mywar.red] mywar.cl < #mywar.global_soldier_limit mywar.dummy if entity @e[team=mywar.red,tag=mywar.soldier,sort=random,distance=..100] run execute store result score #mywar.tag_collect mywar.dummy run tag @e[team=mywar.red,tag=mywar.soldier,sort=random,distance=..100,tag=!mywar.non_collect] add mywar.collected
+execute if score @s[team=mywar.yellow] mywar.cl < #mywar.global_soldier_limit mywar.dummy if entity @e[team=mywar.yellow,tag=mywar.soldier,sort=random,distance=..100] run execute store result score #mywar.tag_collect mywar.dummy run tag @e[team=mywar.yellow,tag=mywar.soldier,sort=random,distance=..100,tag=!mywar.non_collect] add mywar.collected
+execute if score @s[team=mywar.green] mywar.cl < #mywar.global_soldier_limit mywar.dummy if entity @e[team=mywar.green,tag=mywar.soldier,sort=random,distance=..100] run execute store result score #mywar.tag_collect mywar.dummy run tag @e[team=mywar.green,tag=mywar.soldier,sort=random,distance=..100,tag=!mywar.non_collect] add mywar.collected
 
 #Collecting messages
 execute if score #mywar.tag_collect mywar.dummy matches 1.. run tellraw @s {"text":"Collecting soldiers!","color":"green"}

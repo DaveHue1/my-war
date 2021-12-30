@@ -17,7 +17,8 @@ execute as @e[tag=mywar.aggro_green,type=!#minecraft:undead,type=!skeleton_horse
 effect give @e[tag=mywar.aggro_green] minecraft:resistance 1 255
 
 #Getting teams
-execute as @e[tag=mywar.aggro_green_cloud] at @s run data modify entity @s Owner set from entity @e[tag=mywar.soldier,type=!skeleton_horse,team=mywar.green,sort=random,limit=1] UUID 
+execute unless predicate mywar:player/sneaking run execute as @e[tag=mywar.aggro_green_cloud] at @s run data modify entity @s Owner set from entity @e[tag=mywar.soldier,type=!skeleton_horse,team=!mywar.green,sort=random,limit=1] UUID 
+execute if predicate mywar:player/sneaking run execute as @e[tag=mywar.aggro_green_cloud] at @s run data modify entity @s Owner set from entity @e[tag=mywar.soldier,type=!skeleton_horse,team=!mywar.green,sort=nearest,limit=1] UUID 
 
 #Removing tags
 tag @e[tag=mywar.aggro_green] remove mywar.aggro_green

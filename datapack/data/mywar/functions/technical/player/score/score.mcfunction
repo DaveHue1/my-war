@@ -14,3 +14,6 @@ execute unless score @s mywar.spawn_limit matches 0.. run scoreboard players set
 
 #Replenish limit
 execute unless score @s mywar.replenish_limit matches 0.. run scoreboard players set @s mywar.replenish_limit 10
+
+#Set current conquest level to 0
+execute unless score @s mywar.current_conquest_level matches 0.. run scoreboard players set @s mywar.current_conquest_level 0

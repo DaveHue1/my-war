@@ -18,7 +18,7 @@ function mywar:load/scoreboard/misc_objectives/misc_objectives
 function mywar:load/scoreboard/command_objectives/command_objectives
 
 #Item objectives
-function mywar:load/scoreboard/command_objectives/item_objectives
+function mywar:load/scoreboard/item_objectives/item_objectives
 
 #Default scores
 function mywar:load/scoreboard/default_scores/default_scores

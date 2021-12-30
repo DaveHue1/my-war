@@ -4,7 +4,7 @@
 ######
 
 #Village
-execute as @e[type=marker,tag=mywar.village,tag=mywar.village_done,limit=1] at @s run function mywar:technical/clocks/village/done
+execute as @e[type=marker,tag=mywar.village] at @s run function mywar:technical/clocks/village/done
 
 #Tax limit
 function mywar:technical/clocks/item/commands/tax/tax 
