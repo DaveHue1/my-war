@@ -9,7 +9,7 @@
 function mywar:load/scoreboard/collect_objectives/collect_objectives
 
 #Trigger objectives 
-function mywar:load/scoreboard/collect_objectives/trigger_objectives
+function mywar:load/scoreboard/trigger_objectives/trigger_objectives
 
 #Misc objectives
 function mywar:load/scoreboard/misc_objectives/misc_objectives

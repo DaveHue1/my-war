@@ -26,7 +26,7 @@ execute if score @s mywar.c_sm >= #mywar.global_soldier_limit mywar.dummy run sc
 execute if score @s mywar.sm_restore matches 1.. run function mywar:entity/player/trade/swordsmen/return_before
 
 #Message 
-tellraw @s [{"text":"Added","color":"aqua","italic":false},{"text":" "},{"score":{"name":"#mywar.temp.swordsmen","objective":"mywar.dummy"},"color":"aqua","italic":false},{"text":" "},{"text":"swordsmen","color":"aqua","italic":false}]
+tellraw @s {"translate":"mywar.message.player.trade.added","with":[{"score":{"name":"#mywar.temp.swordsmen","objective":"mywar.dummy"},"color":"aqua"},{"translate":"mywar.message.player.trade.added.swordsmen","color":"aqua"}],"color":"aqua"}
 
 #Reset score
 scoreboard players set #mywar.temp.swordsmen mywar.dummy 0

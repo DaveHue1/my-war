@@ -4,4 +4,4 @@
 #Entity generates home base structure
 ##########
 
-function mywar:technical/generate
+function mywar:technical/home_base/home_base

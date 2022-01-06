@@ -1,0 +1,15 @@
+{
+  "name": "minecraft:village/plains/streets",
+  "fallback": "minecraft:village/plains/terminators",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "location": "minecraft:village/plains/streets/new_street",
+        "processors": "minecraft:street_plains",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

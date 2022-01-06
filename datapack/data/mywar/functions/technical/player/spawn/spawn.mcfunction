@@ -4,8 +4,8 @@
 #####
 
 #Message for spawning home base structure
-tellraw @s [{"text":"Place down the Home Base structure to start","color":"green"}]
-tellraw @s [{"text":"Warning: Home base will replace existing blocks, place in clear area.","color":"red"}]
+tellraw @a[sort=nearest,limit=1] {"translate":"mywar.message.home_base.placement","color":"green"}
+tellraw @a[sort=nearest,limit=1] {"translate":"mywar.message.home_base.warning","color":"red"}
 
 #Give player home base item
 function mywar:item/give/home_base

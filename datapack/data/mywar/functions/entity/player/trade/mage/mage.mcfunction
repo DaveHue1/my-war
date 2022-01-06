@@ -26,7 +26,7 @@ execute if score @s mywar.c_mage >= #mywar.global_soldier_limit mywar.dummy run 
 execute if score @s mywar.mage_restore matches 1.. run function mywar:entity/player/trade/mage/return_before
 
 #Message 
-tellraw @s [{"text":"Added","color":"aqua","italic":false},{"text":" "},{"score":{"name":"#mywar.temp.mage","objective":"mywar.dummy"},"color":"aqua","italic":false},{"text":" "},{"text":"mages","color":"aqua","italic":false}]
+tellraw @s {"translate":"mywar.message.player.trade.added","with":[{"score":{"name":"#mywar.temp.mage","objective":"mywar.dummy"},"color":"aqua"},{"translate":"mywar.message.player.trade.added.mages","color":"aqua"}],"color":"aqua"}
 
 #Reset score
 scoreboard players set #mywar.temp.mage mywar.dummy 0

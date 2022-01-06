@@ -26,7 +26,7 @@ execute if score @s mywar.c_archer >= #mywar.global_soldier_limit mywar.dummy ru
 execute if score @s mywar.archer_restore matches 1.. run function mywar:entity/player/trade/archer/return_before
 
 #Message 
-tellraw @s [{"text":"Added","color":"aqua","italic":false},{"text":" "},{"score":{"name":"#mywar.temp.archer","objective":"mywar.dummy"},"color":"aqua","italic":false},{"text":" "},{"text":"archers","color":"aqua","italic":false}]
+tellraw @s {"translate":"mywar.message.player.trade.added","with":[{"score":{"name":"#mywar.temp.archer","objective":"mywar.dummy"},"color":"aqua"},{"translate":"mywar.message.player.trade.archers_added.archers","color":"aqua"}],"color":"aqua"}
 
 #Reset score
 scoreboard players set #mywar.temp.archer mywar.dummy 0

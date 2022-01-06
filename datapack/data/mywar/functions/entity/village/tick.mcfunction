@@ -3,10 +3,7 @@
 #Author: Dave Hue
 ######
 
-#Set up village
-#execute as @s[tag=!mywar.village_done] at @s run function mywar:entity/village/village
-
-#Deplete progress bar
+#Deplete progress for capturing village
 execute as @e[type=item,distance=..300,predicate=mywar:item/deplete/deplete_item] run function mywar:entity/village/deplete/deplete
 
 #Particle

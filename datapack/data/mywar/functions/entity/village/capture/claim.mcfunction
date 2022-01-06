@@ -7,7 +7,7 @@
 function mywar:entity/village/capture/claim/team
 
 #Sound 
-playsound minecraft:mywar.war.victory music @a[sort=nearest,limit=1]
+playsound minecraft:mywar.war.victory music @p
 
 #Tags
 tag @s add mywar.village_captured
@@ -15,7 +15,9 @@ tag @s remove mywar.invaded
 
 
 #Gives items
-give @a[sort=nearest,limit=1] structure_block{display:{Name:'{"text":"Money","color":"yellow","bold":false,"italic":false}'},CustomModelData:1,mywar.currency:1b,mywar.item:1b} 128
+execute as @p at @s run function mywar:item/give/money
+execute as @p at @s run function mywar:item/give/money
+execute as @p at @s run function mywar:item/give/money
 function mywar:entity/village/capture/waypoint
 
 #Summon waypoint right click
@@ -23,9 +25,9 @@ summon villager ~ ~2 ~ {NoAI:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["my
 summon villager ~ ~ ~ {NoAI:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mywar.wpr"],ActiveEffects:[{Id:14b,Amplifier:255b,Duration:20000000,ShowParticles:0b}],VillagerData:{profession:"minecraft:nitwit"}}
 
 #Message
-scoreboard players add @a[sort=nearest,limit=1] mywar.current_conquest_level 1
+scoreboard players add @p mywar.current_conquest_level 1
 execute if score @s mywar.spawn_limit < #mywar.global_soldier_limit mywar.dummy run scoreboard players add @a[sort=nearest,limit=1] mywar.spawn_limit 2
-execute as @a[sort=nearest,limit=1] at @s run tellraw @s [{"text":"Your conquest level is now ","color":"yellow"},{"score":{"name":"@s","objective":"mywar.current_conquest_level"},"color":"yellow","hoverEvent":{"action":"show_text","contents":[{"text":"","color":"yellow"}]}},{"text":"!","color":"yellow","hoverEvent":{"action":"show_text","contents":[{"text":"","color":"green"}]}}]
+tellraw @p {"translate":"mywar.message.village.conquest_level","with":[{"score":{"name":"@p","objective":"mywar.current_conquest_level"},"color":"green"}],"color":"yellow"}
 
 #Adds scores
 execute if score @a[sort=nearest,limit=1] mywar.current_conquest_level = #mywar.upgrade1 mywar.dummy run scoreboard players add @a[sort=nearest,limit=1] mywar.spawn_count 1 

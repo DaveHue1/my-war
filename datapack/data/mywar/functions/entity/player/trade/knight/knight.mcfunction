@@ -26,7 +26,7 @@ execute if score @s mywar.c_knight >= #mywar.global_soldier_limit mywar.dummy ru
 execute if score @s mywar.knight_restore matches 1.. run function mywar:entity/player/trade/knight/return_before
 
 #Message 
-tellraw @s [{"text":"Added","color":"aqua","italic":false},{"text":" "},{"score":{"name":"#mywar.temp.knight","objective":"mywar.dummy"},"color":"aqua","italic":false},{"text":" "},{"text":"knights","color":"aqua","italic":false}]
+tellraw @s {"translate":"mywar.message.player.trade.added","with":[{"score":{"name":"#mywar.temp.knight","objective":"mywar.dummy"},"color":"aqua"},{"translate":"mywar.message.player.trade.added.knights","color":"aqua"}],"color":"aqua"}
 
 #Reset score
 scoreboard players set #mywar.temp.knight mywar.dummy 0

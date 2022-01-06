@@ -17,3 +17,10 @@ execute unless score @s mywar.replenish_limit matches 0.. run scoreboard players
 
 #Set current conquest level to 0
 execute unless score @s mywar.current_conquest_level matches 0.. run scoreboard players set @s mywar.current_conquest_level 0
+
+#Default spread level 
+scoreboard players set @s mywar.spreadlvl 15
+
+#Guide book trigger enable 
+scoreboard players enable @s mywar.book
+scoreboard players enable @s mywar.controller_item

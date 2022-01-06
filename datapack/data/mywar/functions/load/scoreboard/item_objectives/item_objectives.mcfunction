@@ -12,3 +12,6 @@ scoreboard objectives add mywar.vt.z dummy
 scoreboard objectives add mywar.wp.x dummy
 scoreboard objectives add mywar.wp.y dummy
 scoreboard objectives add mywar.wp.z dummy
+
+#Controller item
+scoreboard objectives add mywar.controller dummy

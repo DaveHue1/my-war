@@ -11,10 +11,10 @@ scoreboard players remove @s mywar.capture 1
 
 ##Messages
 #Message for countdown
-tellraw @a[distance=..200] [{"text":"Village will be captured in ","color":"yellow"},{"score":{"name":"@s","objective":"mywar.capture"},"color":"yellow","hoverEvent":{"action":"show_text","contents":[{"text":"","color":"yellow"}]}},{"text":". . .","color":"yellow","hoverEvent":{"action":"show_text","contents":[{"text":"","color":"yellow"}]}}]
+tellraw @p {"translate":"mywar.message.village.capture","with":[{"score":{"name":"@s","objective":"mywar.capture"},"color":"yellow"}],"color":"green"}
 
 #Message for capture
-execute if score @s mywar.capture matches 0 run tellraw @a[distance=..200] {"text":"Village captured!","color":"blue"}
+execute if score @s mywar.capture matches 0 run tellraw @a[distance=..200] {"translate":"mywar.message.village.capture.final","color":"blue"}
 
 #Capture sequence 
 execute if score @s mywar.capture matches 0 run function mywar:entity/village/capture/claim

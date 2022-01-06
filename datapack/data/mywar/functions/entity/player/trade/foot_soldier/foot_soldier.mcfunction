@@ -26,7 +26,7 @@ execute if score @s mywar.c_fs_i >= #mywar.global_soldier_limit mywar.dummy run 
 execute if score @s mywar.fs_restore matches 1.. run function mywar:entity/player/trade/foot_soldier/return_before
 
 #Message 
-tellraw @s [{"text":"Added","color":"aqua","italic":false},{"text":" "},{"score":{"name":"#mywar.temp.foot_soldier","objective":"mywar.dummy"},"color":"aqua","italic":false},{"text":" "},{"text":"foot soldiers","color":"aqua","italic":false}]
+tellraw @s {"translate":"mywar.message.player.trade.added","with":[{"score":{"name":"#mywar.temp.foot_soldier","objective":"mywar.dummy"},"color":"aqua"},{"translate":"mywar.message.player.trade.added.foot_soldiers","color":"aqua"}],"color":"aqua"}
 
 #Reset score
 scoreboard players set #mywar.temp.foot_soldier mywar.dummy 0

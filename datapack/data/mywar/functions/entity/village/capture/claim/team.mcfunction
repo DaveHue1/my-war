@@ -10,10 +10,7 @@ tag @s remove mywar.yellow
 tag @s remove mywar.green
 
 #Join the conquering team
-execute if entity @a[sort=nearest,limit=1,team=mywar.blue] run tag @s add mywar.blue
-execute if entity @a[sort=nearest,limit=1,team=mywar.red] run tag @s add mywar.red
-execute if entity @a[sort=nearest,limit=1,team=mywar.yellow] run tag @s add mywar.yellow
-execute if entity @a[sort=nearest,limit=1,team=mywar.green] run tag @s add mywar.green
+execute as @a[sort=nearest,limit=1,tag=mywar.universal,distance=..5] at @s run function mywar:entity/village/capture/claim/team_closest
 
 #Modify soldier loot tables
 execute if entity @s[tag=mywar.blue] run execute as @e[tag=mywar.soldier,team=!mywar.blue,distance=..200] run data merge entity @s {DeathLootTable:"mywar:item/deplete/deplete_blue"}

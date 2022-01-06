@@ -16,3 +16,8 @@ scoreboard objectives add mywar.tax_collection_limit dummy
 
 #Spread radius
 scoreboard objectives add mywar.spreadlvl dummy
+
+#Home base objectives
+scoreboard objectives add mywar.homebase_x dummy
+scoreboard objectives add mywar.homebase_y dummy
+scoreboard objectives add mywar.homebase_z dummy

@@ -4,7 +4,7 @@
 #####
 
 #Message
-tellraw @a[sort=nearest,limit=1,distance=..10] {"text":"Moving out of capture boundary!","color":"red"}
+tellraw @a[sort=nearest,limit=1,distance=..10] {"translate":"mywar.message.village.capture_boundary","color":"red"}
 
 #Reset
 scoreboard players set @s mywar.capture 10

@@ -4,7 +4,7 @@
 #####
 
 #Message
-tellraw @a[team=mywar.red] [{"text":"You have been assigned to the ","color":"yellow"},{"text":"Red","color":"red"},{"text":" team!","color":"yellow"}]
-tellraw @a[team=mywar.blue] [{"text":"You have been assigned to the ","color":"yellow"},{"text":"Blue","color":"blue"},{"text":" team!","color":"yellow"}]
-tellraw @a[team=mywar.yellow] [{"text":"You have been assigned to the ","color":"yellow"},{"text":"Yellow","color":"yellow"},{"text":" team!","color":"yellow"}]
-tellraw @a[team=mywar.green] [{"text":"You have been assigned to the ","color":"yellow"},{"text":"Green","color":"green"},{"text":" team!","color":"yellow"}]
+tellraw @s[team=mywar.red] {"translate":"mywar.message.player.team.assign","with":[{"translate":"mywar.message.player.team.name.red","color":"red"}],"color":"yellow"}
+tellraw @s[team=mywar.blue] {"translate":"mywar.message.player.team.assign","with":[{"translate":"mywar.message.player.team.name.blue","color":"blue"}],"color":"yellow"}
+tellraw @s[team=mywar.yellow] {"translate":"mywar.message.player.team.assign","with":[{"translate":"mywar.message.player.team.name.yellow","color":"yellow"}],"color":"yellow"}
+tellraw @s[team=mywar.green] {"translate":"mywar.message.player.team.assign","with":[{"translate":"mywar.message.player.team.name.green","color":"green"}],"color":"yellow"}

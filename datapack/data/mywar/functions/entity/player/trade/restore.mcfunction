@@ -19,7 +19,7 @@ execute if predicate mywar:player/trade/knight run function mywar:entity/player/
 execute if predicate mywar:player/trade/mage run function mywar:entity/player/trade/mage/restore
 
 #Message
-tellraw @s {"text":"Soldier limit reached","color":"red"}
+tellraw @s {"translate":"mywar.message.player.trade.limit_reached","color":"red"}
 
 #Reset scores
 scoreboard players reset @s mywar.traded
