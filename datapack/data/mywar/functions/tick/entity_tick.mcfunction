@@ -4,7 +4,7 @@
 #########
 
 #Home base gen
-execute as @s[tag=mywar.generate] at @s run function mywar:entity/home_base_gen
+execute if entity @s[tag=mywar.generate] run function mywar:entity/home_base_gen
 
 #Village 
-execute as @s[tag=mywar.village] at @s run function mywar:entity/village/tick
+execute if entity @s[tag=mywar.village] run function mywar:entity/village/tick
