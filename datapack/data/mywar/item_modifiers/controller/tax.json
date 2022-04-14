@@ -1,6 +1,0 @@
-[
-  {
-    "function": "minecraft:set_nbt",
-	"tag": "{mywar.controller:1b,mywar.item:1b,CustomModelData:7,display:{Name:'[{\"translate\":\"mywar.item.controller.name1\",\"color\":\"aqua\",\"italic\":\"false\"},{\"translate\":\"mywar.item.controller.name2\",\"color\":\"yellow\",\"italic\":\"false\"},{\"translate\":\"mywar.item.controller.name3\",\"color\":\"green\",\"italic\":\"false\"},{\"translate\":\"mywar.item.controller.name4\",\"with\":[{\"translate\":\"mywar.item.controller.tax\"}],\"color\":\"gold\",\"italic\":\"false\"}]',Lore:['{\"translate\":\"mywar.item.controller.lore.description\",\"with\":[{\"translate\":\"mywar.item.controller.lore.description.tax\"}],\"color\":\"gray\",\"italic\":\"false\"}','{\"text\":\"━━━━━━━━━━\",\"color\":\"white\",\"italic\":\"false\"}','{\"translate\":\"mywar.item.controller.lore.right_click\",\"color\":\"yellow\",\"italic\":\"false\"}','{\"translate\":\"mywar.item.controller.lore.shift_right_click\",\"color\":\"yellow\",\"italic\":\"false\"}']}}\n"
-  }
-]
